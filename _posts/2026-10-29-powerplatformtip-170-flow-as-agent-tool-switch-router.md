@@ -129,6 +129,7 @@ An OData filter is already a plain string that goes straight into *Filter Query*
 From your input descriptions. Spell out the expected format (OData vs. JSON) in each trigger input's description, that's the text the model uses to build the call.
 
 ## 🔗 Related Tips
-- [#PowerPlatformTip 135: One Flow, Many Users](https://www.powerplatformtip.com/article/powerplatformtip/powerplatformtip-135-One-Flow-Many-Users/), one flow serving many callers in their own context.
+- [#PowerPlatformTip 158: Return Flow Data to Power Apps with ParseJSON](https://www.powerplatformtip.com/article/powerplatformtip/powerplatformtip-158-parsejson-return-flow-data-power-apps/), the same *Respond to a PowerApp or flow* + JSON pattern this router returns.
+- [#PowerPlatformTip 104: Efficient JSON Handling](https://www.powerplatformtip.com/article/powerplatformtip/powerplatformtip-104-efficient-json-handling/), Parse JSON schemas for the `create` / `update` branches.
+- [#PowerPlatformTip 95: Optimized SharePoint Queries](https://www.powerplatformtip.com/article/powerplatformtip/powerplatformtip-95-optimized-sharepoint-queries/), building the OData Filter Query used in the `get` branch.
 - [#PowerPlatformTip 118: Copy Actions in Switch/Condition](https://www.powerplatformtip.com/article/powerplatformtip/powerplatformtip-118-copy-actions-in-switch_condition/), working cleanly inside Switch branches.
-- [#PowerPlatformTip 51: Which Flow Calls Which Flow](https://www.powerplatformtip.com/article/powerplatformtip/powerplatformtip-51-which-flow-calls-which-flow/), mapping flow-to-flow orchestration.
