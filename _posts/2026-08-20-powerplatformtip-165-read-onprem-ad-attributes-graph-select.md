@@ -1,6 +1,6 @@
 ---
 title: "#PowerPlatformTip 165: 'Read On-Prem AD Attributes via the User Profile and $select'"
-date: 2026-08-20
+date: 2026-08-13
 categories:
   - Article
   - PowerPlatformTip
