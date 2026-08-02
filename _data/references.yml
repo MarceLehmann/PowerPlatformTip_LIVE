@@ -3,6 +3,900 @@
 # Purely additive: a post only shows a references block when its number is listed here.
 # Add a new numbered entry to extend this to future tips. Keys are quoted strings on purpose.
 
+"1":
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+  - title: "Microsoft Learn - Power Platform training"
+    url: "https://learn.microsoft.com/en-us/training/powerplatform/"
+
+"2":
+  - title: "Share a canvas app"
+    url: "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/share-app"
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+
+"3":
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+
+"4":
+  - title: "ParseJSON function (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-parsejson"
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+
+"5":
+  - title: "Work with variables in canvas apps"
+    url: "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/working-with-variables"
+  - title: "With function (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-with"
+
+"6":
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+
+"7":
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+
+"8":
+  - title: "Solutions overview"
+    url: "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/solutions-overview"
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+
+"9":
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+
+"10":
+  - title: "Work with variables in canvas apps"
+    url: "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/working-with-variables"
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+
+"11":
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+
+"12":
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+  - title: "Custom connectors overview"
+    url: "https://learn.microsoft.com/en-us/connectors/custom-connectors/"
+
+"13":
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+
+"14":
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+  - title: "Show a list of items in a gallery"
+    url: "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/add-gallery"
+
+"15":
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+
+"16":
+  - title: "Collect, Clear, and ClearCollect functions (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-clear-collect-clearcollect"
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+
+"17":
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+
+"18":
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+
+"19":
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+
+"20":
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+  - title: "Share a canvas app"
+    url: "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/share-app"
+
+"21":
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+
+"22":
+  - title: "Color functions (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-colors"
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+
+"23":
+  - title: "IsBlank, IsEmpty, and Coalesce functions (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-isblank-isempty"
+  - title: "Filter, LookUp, and Search functions (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-filter-lookup"
+
+"24":
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+
+"25":
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+  - title: "Microsoft Learn - Power Platform training"
+    url: "https://learn.microsoft.com/en-us/training/powerplatform/"
+
+"26":
+  - title: "Microsoft Learn - Power Platform training"
+    url: "https://learn.microsoft.com/en-us/training/powerplatform/"
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+
+"27":
+  - title: "SharePoint Online connector reference"
+    url: "https://learn.microsoft.com/en-us/connectors/sharepointonline/"
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+
+"28":
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+
+"29":
+  - title: "ParseJSON function (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-parsejson"
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+
+"30":
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+
+"31":
+  - title: "Microsoft Learn - Power Platform training"
+    url: "https://learn.microsoft.com/en-us/training/powerplatform/"
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+
+"32":
+  - title: "GroupBy and Ungroup functions (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-groupby"
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+
+"33":
+  - title: "IsBlank, IsEmpty, and Coalesce functions (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-isblank-isempty"
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+
+"34":
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+
+"35":
+  - title: "Concurrent function (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-concurrent"
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+
+"36":
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+
+"37":
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+
+"38":
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+
+"39":
+  - title: "Use FetchXML to query data"
+    url: "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/fetchxml/overview"
+  - title: "What is Microsoft Dataverse?"
+    url: "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-intro"
+
+"40":
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+
+"41":
+  - title: "What is Microsoft Dataverse?"
+    url: "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-intro"
+  - title: "Create or edit views (Dataverse)"
+    url: "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/create-edit-views"
+
+"42":
+  - title: "Create or edit views (Dataverse)"
+    url: "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/create-edit-views"
+  - title: "What is Microsoft Dataverse?"
+    url: "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-intro"
+
+"43":
+  - title: "With function (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-with"
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+
+"44":
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+
+"45":
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+
+"46":
+  - title: "Microsoft PowerToys"
+    url: "https://learn.microsoft.com/en-us/windows/powertoys/"
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+
+"47":
+  - title: "Working with the SharePoint Send HTTP Request flow action"
+    url: "https://learn.microsoft.com/en-us/sharepoint/dev/business-apps/power-automate/guidance/working-with-send-sp-http-request"
+  - title: "Complete basic operations using SharePoint REST endpoints"
+    url: "https://learn.microsoft.com/en-us/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-rest-endpoints"
+
+"48":
+  - title: "Share a canvas app"
+    url: "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/share-app"
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+
+"49":
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+
+"50":
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+  - title: "Solutions overview"
+    url: "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/solutions-overview"
+
+"51":
+  - title: "Center of Excellence (CoE) Starter Kit"
+    url: "https://learn.microsoft.com/en-us/power-platform/guidance/coe/overview"
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+
+"52":
+  - title: "What is Microsoft Dataverse?"
+    url: "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-intro"
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+
+"53":
+  - title: "Launch and Param functions (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-param"
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+
+"54":
+  - title: "Show a list of items in a gallery"
+    url: "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/add-gallery"
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+
+"55":
+  - title: "Color functions (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-colors"
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+
+"56":
+  - title: "Center of Excellence (CoE) Starter Kit"
+    url: "https://learn.microsoft.com/en-us/power-platform/guidance/coe/overview"
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+
+"57":
+  - title: "Patch function (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-patch"
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+
+"58":
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+
+"59":
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+
+"60":
+  - title: "Microsoft Learn - Power Platform training"
+    url: "https://learn.microsoft.com/en-us/training/powerplatform/"
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+
+"61":
+  - title: "Environment variables overview"
+    url: "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/environmentvariables"
+  - title: "Solutions overview"
+    url: "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/solutions-overview"
+
+"62":
+  - title: "Update and UpdateIf functions (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-update-updateif"
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+
+"63":
+  - title: "Filter, LookUp, and Search functions (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-filter-lookup"
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+
+"64":
+  - title: "Filter, LookUp, and Search functions (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-filter-lookup"
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+
+"65":
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+
+"66":
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+
+"67":
+  - title: "Launch and Param functions (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-param"
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+
+"68":
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+
+"69":
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+
+"70":
+  - title: "Microsoft Teams connector reference"
+    url: "https://learn.microsoft.com/en-us/connectors/teams/"
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+
+"71":
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+
+"72":
+  - title: "Custom connectors overview"
+    url: "https://learn.microsoft.com/en-us/connectors/custom-connectors/"
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+
+"73":
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+
+"74":
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+  - title: "Working with the SharePoint Send HTTP Request flow action"
+    url: "https://learn.microsoft.com/en-us/sharepoint/dev/business-apps/power-automate/guidance/working-with-send-sp-http-request"
+
+"75":
+  - title: "Concurrent function (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-concurrent"
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+
+"76":
+  - title: "Share a canvas app"
+    url: "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/share-app"
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+
+"77":
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+
+"78":
+  - title: "Reset function (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-reset"
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+
+"79":
+  - title: "Patch function (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-patch"
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+
+"80":
+  - title: "AI Builder overview"
+    url: "https://learn.microsoft.com/en-us/ai-builder/overview"
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+
+"81":
+  - title: "Patch function (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-patch"
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+
+"82":
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+
+"83":
+  - title: "Microsoft Teams connector reference"
+    url: "https://learn.microsoft.com/en-us/connectors/teams/"
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+
+"84":
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+
+"85":
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+
+"86":
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+
+"87":
+  - title: "Share a canvas app"
+    url: "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/share-app"
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+
+"88":
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+  - title: "Microsoft Learn - Power Platform training"
+    url: "https://learn.microsoft.com/en-us/training/powerplatform/"
+
+"89":
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+
+"90":
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+
+"91":
+  - title: "If and Switch functions (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-if"
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+
+"92":
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+
+"93":
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+
+"94":
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+  - title: "AI Builder overview"
+    url: "https://learn.microsoft.com/en-us/ai-builder/overview"
+
+"95":
+  - title: "SharePoint Online connector reference"
+    url: "https://learn.microsoft.com/en-us/connectors/sharepointonline/"
+  - title: "Working with the SharePoint Send HTTP Request flow action"
+    url: "https://learn.microsoft.com/en-us/sharepoint/dev/business-apps/power-automate/guidance/working-with-send-sp-http-request"
+
+"96":
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+
+"97":
+  - title: "SharePoint Online connector reference"
+    url: "https://learn.microsoft.com/en-us/connectors/sharepointonline/"
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+
+"98":
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+
+"99":
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+  - title: "AI Builder overview"
+    url: "https://learn.microsoft.com/en-us/ai-builder/overview"
+
+"100":
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+
+"101":
+  - title: "Collect, Clear, and ClearCollect functions (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-clear-collect-clearcollect"
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+
+"102":
+  - title: "Office 365 Outlook connector reference"
+    url: "https://learn.microsoft.com/en-us/connectors/office365/"
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+
+"103":
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+
+"104":
+  - title: "ParseJSON function (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-parsejson"
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+
+"105":
+  - title: "Environment variables overview"
+    url: "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/environmentvariables"
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+
+"106":
+  - title: "Office 365 Outlook connector reference"
+    url: "https://learn.microsoft.com/en-us/connectors/office365/"
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+
+"107":
+  - title: "SharePoint Online connector reference"
+    url: "https://learn.microsoft.com/en-us/connectors/sharepointonline/"
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+
+"108":
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+
+"109":
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+
+"110":
+  - title: "SharePoint Online connector reference"
+    url: "https://learn.microsoft.com/en-us/connectors/sharepointonline/"
+  - title: "SharePoint documentation"
+    url: "https://learn.microsoft.com/en-us/sharepoint/"
+
+"111":
+  - title: "Get started with Power Automate approvals"
+    url: "https://learn.microsoft.com/en-us/power-automate/get-started-approvals"
+  - title: "Microsoft Teams connector reference"
+    url: "https://learn.microsoft.com/en-us/connectors/teams/"
+
+"112":
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+
+"113":
+  - title: "Collect, Clear, and ClearCollect functions (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-clear-collect-clearcollect"
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+
+"114":
+  - title: "Get started with Power Automate approvals"
+    url: "https://learn.microsoft.com/en-us/power-automate/get-started-approvals"
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+
+"115":
+  - title: "AI Builder overview"
+    url: "https://learn.microsoft.com/en-us/ai-builder/overview"
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+
+"116":
+  - title: "AI Builder overview"
+    url: "https://learn.microsoft.com/en-us/ai-builder/overview"
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+
+"117":
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+
+"118":
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+
+"119":
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+
+"120":
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+
+"121":
+  - title: "SharePoint Online connector reference"
+    url: "https://learn.microsoft.com/en-us/connectors/sharepointonline/"
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+
+"122":
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+
+"123":
+  - title: "SharePoint Online connector reference"
+    url: "https://learn.microsoft.com/en-us/connectors/sharepointonline/"
+  - title: "Working with the SharePoint Send HTTP Request flow action"
+    url: "https://learn.microsoft.com/en-us/sharepoint/dev/business-apps/power-automate/guidance/working-with-send-sp-http-request"
+
+"124":
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+
+"125":
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+
+"126":
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+  - title: "Microsoft Graph documentation"
+    url: "https://learn.microsoft.com/en-us/graph/"
+
+"127":
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+  - title: "Office 365 Outlook connector reference"
+    url: "https://learn.microsoft.com/en-us/connectors/office365/"
+
+"128":
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+
+"129":
+  - title: "SharePoint Online connector reference"
+    url: "https://learn.microsoft.com/en-us/connectors/sharepointonline/"
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+
+"130":
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+
+"131":
+  - title: "ForAll function (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-forall"
+  - title: "Patch function (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-patch"
+
+"132":
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+  - title: "Office 365 Outlook connector reference"
+    url: "https://learn.microsoft.com/en-us/connectors/office365/"
+
+"133":
+  - title: "Working with the SharePoint Send HTTP Request flow action"
+    url: "https://learn.microsoft.com/en-us/sharepoint/dev/business-apps/power-automate/guidance/working-with-send-sp-http-request"
+  - title: "SharePoint Online connector reference"
+    url: "https://learn.microsoft.com/en-us/connectors/sharepointonline/"
+
+"134":
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+
+"135":
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+  - title: "Share a canvas app"
+    url: "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/share-app"
+
+"136":
+  - title: "Patch function (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-patch"
+  - title: "IsBlank, IsEmpty, and Coalesce functions (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-isblank-isempty"
+
+"137":
+  - title: "Working with the SharePoint Send HTTP Request flow action"
+    url: "https://learn.microsoft.com/en-us/sharepoint/dev/business-apps/power-automate/guidance/working-with-send-sp-http-request"
+  - title: "Complete basic operations using SharePoint REST endpoints"
+    url: "https://learn.microsoft.com/en-us/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-rest-endpoints"
+
+"138":
+  - title: "Microsoft Graph documentation"
+    url: "https://learn.microsoft.com/en-us/graph/"
+  - title: "Use the Microsoft Graph API"
+    url: "https://learn.microsoft.com/en-us/graph/use-the-api"
+
+"139":
+  - title: "Office 365 Outlook connector reference"
+    url: "https://learn.microsoft.com/en-us/connectors/office365/"
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+
+"140":
+  - title: "AI Builder overview"
+    url: "https://learn.microsoft.com/en-us/ai-builder/overview"
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+
+"141":
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+
+"142":
+  - title: "Office 365 Outlook connector reference"
+    url: "https://learn.microsoft.com/en-us/connectors/office365/"
+  - title: "Microsoft Graph documentation"
+    url: "https://learn.microsoft.com/en-us/graph/"
+
+"143":
+  - title: "AI Builder overview"
+    url: "https://learn.microsoft.com/en-us/ai-builder/overview"
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+
+"144":
+  - title: "Get started with Power Automate approvals"
+    url: "https://learn.microsoft.com/en-us/power-automate/get-started-approvals"
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+
+"145":
+  - title: "Microsoft Power Platform documentation"
+    url: "https://learn.microsoft.com/en-us/power-platform/"
+  - title: "Power Apps documentation"
+    url: "https://learn.microsoft.com/en-us/power-apps/"
+
+"146":
+  - title: "Encode and decode functions (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-encode-decode"
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+
+"147":
+  - title: "Patch function (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-patch"
+  - title: "Power Automate documentation"
+    url: "https://learn.microsoft.com/en-us/power-automate/"
+
+"148":
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+
+"149":
+  - title: "Get started with Power Automate approvals"
+    url: "https://learn.microsoft.com/en-us/power-automate/get-started-approvals"
+  - title: "Office 365 Outlook connector reference"
+    url: "https://learn.microsoft.com/en-us/connectors/office365/"
+
 "150":
   - title: "Office Scripts overview"
     url: "https://learn.microsoft.com/en-us/office/dev/scripts/overview/excel"
