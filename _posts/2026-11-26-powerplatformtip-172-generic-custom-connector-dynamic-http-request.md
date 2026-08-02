@@ -1,6 +1,6 @@
 ---
 title: "#PowerPlatformTip 172: 'One Custom Connector, Any Endpoint - Central Auth with a Dynamic HTTP Request'"
-date: 2026-11-26
+date: 2026-10-01
 categories:
   - Article
   - PowerPlatformTip
