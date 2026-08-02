@@ -1,6 +1,6 @@
 ---
 title: "#PowerPlatformTip 170: 'One Flow, Many Tools – a Switch Router for Copilot Studio Agents'"
-date: 2026-10-29
+date: 2026-09-17
 categories:
   - Article
   - PowerPlatformTip
