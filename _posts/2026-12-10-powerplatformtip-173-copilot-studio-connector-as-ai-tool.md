@@ -1,6 +1,6 @@
 ---
 title: "#PowerPlatformTip 173: 'Let Copilot Studio Build the Call - Your Connector as an AI Tool'"
-date: 2026-12-10
+date: 2026-10-08
 categories:
   - Article
   - PowerPlatformTip
