@@ -1,6 +1,6 @@
 ---
 title: "#PowerPlatformTip 171: 'Debounce the Email Trigger with a Status Flag & Modified-Date Window'"
-date: 2026-11-12
+date: 2026-09-24
 categories:
   - Article
   - PowerPlatformTip
