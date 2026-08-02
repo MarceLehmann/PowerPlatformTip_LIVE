@@ -44,11 +44,10 @@ layout: default
         {% include schema-howto.html %}
         {{ content }}
         {% if page.id %}
-          {% include topic-hub-links.html %}
+          {% include references.html %}
         {% endif %}
-        {% comment %}<!-- Smart related posts - show directly below content -->{% endcomment %}
         {% if page.id %}
-          {% include related-posts-smart.html %}
+          {% include topic-hub-links.html %}
         {% endif %}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>

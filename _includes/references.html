@@ -1,0 +1,21 @@
+{%- comment -%}
+  Renders a curated "Official Microsoft documentation" block for a post.
+  References live in _data/references.yml, keyed by the tip number that is
+  parsed from the post slug (e.g. "powerplatformtip-160-..." -> "160").
+  Purely additive: only renders when a matching entry exists, so posts
+  without curated references are left completely unchanged.
+  Links are dofollow on purpose (authoritative outbound = E-E-A-T / GEO signal).
+{%- endcomment -%}
+{%- assign _slug_parts = page.slug | split: '-' -%}
+{%- assign _tip_number = _slug_parts[1] -%}
+{%- assign _refs = site.data.references[_tip_number] -%}
+{%- if _refs and _refs.size > 0 -%}
+<aside class="ppt-references" aria-label="Official Microsoft documentation">
+  <h2>📖 Official Microsoft documentation</h2>
+  <ul>
+    {%- for ref in _refs -%}
+    <li><a href="{{ ref.url }}" target="_blank" rel="noopener">{{ ref.title }}</a></li>
+    {%- endfor -%}
+  </ul>
+</aside>
+{%- endif -%}
