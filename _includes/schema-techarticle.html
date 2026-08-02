@@ -67,7 +67,16 @@
     "@type": "InteractionCounter",
     "interactionType": "https://schema.org/ReadAction",
     "userInteractionCount": {{ page.views | default: 0 }}
-  }
+  }{%- assign _slug_parts = page.slug | split: '-' -%}{%- assign _tip_number = _slug_parts[1] -%}{%- assign _refs = site.data.references[_tip_number] -%}{%- if _refs and _refs.size > 0 -%},
+  "citation": [
+    {%- for ref in _refs -%}
+    {
+      "@type": "CreativeWork",
+      "name": {{ ref.title | jsonify }},
+      "url": {{ ref.url | jsonify }}
+    }{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  ]{%- endif -%}
 }
 </script>
 {% endif %}

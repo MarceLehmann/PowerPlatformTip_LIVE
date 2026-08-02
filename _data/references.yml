@@ -1,0 +1,154 @@
+# Curated external Microsoft Learn references per PowerPlatformTip.
+# Keyed by the tip number (parsed from the post slug in _includes/references.html).
+# Purely additive: a post only shows a references block when its number is listed here.
+# Add a new numbered entry to extend this to future tips. Keys are quoted strings on purpose.
+
+"150":
+  - title: "Office Scripts overview"
+    url: "https://learn.microsoft.com/en-us/office/dev/scripts/overview/excel"
+  - title: "Run Office Scripts with Power Automate"
+    url: "https://learn.microsoft.com/en-us/office/dev/scripts/develop/power-automate-integration"
+
+"151":
+  - title: "Create and edit virtual tables with Microsoft Dataverse"
+    url: "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/create-edit-virtual-entities"
+  - title: "Create virtual tables using virtual connectors"
+    url: "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/create-virtual-tables-using-connectors"
+
+"152":
+  - title: "Sequence function (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-sequence"
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+
+"153":
+  - title: "Working with the SharePoint Send HTTP Request flow action"
+    url: "https://learn.microsoft.com/en-us/sharepoint/dev/business-apps/power-automate/guidance/working-with-send-sp-http-request"
+  - title: "Complete basic operations using SharePoint REST endpoints"
+    url: "https://learn.microsoft.com/en-us/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-rest-endpoints"
+
+"154":
+  - title: "Working with the SharePoint Send HTTP Request flow action"
+    url: "https://learn.microsoft.com/en-us/sharepoint/dev/business-apps/power-automate/guidance/working-with-send-sp-http-request"
+  - title: "Complete basic operations using SharePoint REST endpoints"
+    url: "https://learn.microsoft.com/en-us/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-rest-endpoints"
+
+"155":
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+
+"156":
+  - title: "Working with the SharePoint Send HTTP Request flow action"
+    url: "https://learn.microsoft.com/en-us/sharepoint/dev/business-apps/power-automate/guidance/working-with-send-sp-http-request"
+  - title: "Upload large files with an upload session (Microsoft Graph)"
+    url: "https://learn.microsoft.com/en-us/graph/api/driveitem-createuploadsession?view=graph-rest-1.0"
+
+"157":
+  - title: "Run Office Scripts with Power Automate"
+    url: "https://learn.microsoft.com/en-us/office/dev/scripts/develop/power-automate-integration"
+  - title: "Office Scripts overview"
+    url: "https://learn.microsoft.com/en-us/office/dev/scripts/overview/excel"
+
+"158":
+  - title: "ParseJSON function (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-parsejson"
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+
+"159":
+  - title: "Download function (Power Fx)"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-download"
+  - title: "Power Fx formula reference"
+    url: "https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview"
+
+"160":
+  - title: "Working with the SharePoint Send HTTP Request flow action"
+    url: "https://learn.microsoft.com/en-us/sharepoint/dev/business-apps/power-automate/guidance/working-with-send-sp-http-request"
+  - title: "Get to know the SharePoint REST service"
+    url: "https://learn.microsoft.com/en-us/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service"
+
+"161":
+  - title: "Working with the SharePoint Send HTTP Request flow action"
+    url: "https://learn.microsoft.com/en-us/sharepoint/dev/business-apps/power-automate/guidance/working-with-send-sp-http-request"
+  - title: "Get to know the SharePoint REST service"
+    url: "https://learn.microsoft.com/en-us/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service"
+
+"162":
+  - title: "Microsoft Teams connector reference"
+    url: "https://learn.microsoft.com/en-us/connectors/teams/"
+  - title: "Create channel (Microsoft Graph)"
+    url: "https://learn.microsoft.com/en-us/graph/api/channel-post?view=graph-rest-1.0"
+
+"163":
+  - title: "Office 365 Outlook connector reference"
+    url: "https://learn.microsoft.com/en-us/connectors/office365/"
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+
+"164":
+  - title: "Create invitation (Microsoft Graph B2B)"
+    url: "https://learn.microsoft.com/en-us/graph/api/invitation-post?view=graph-rest-1.0"
+  - title: "Microsoft Graph documentation"
+    url: "https://learn.microsoft.com/en-us/graph/"
+
+"165":
+  - title: "Use query parameters ($select) in Microsoft Graph"
+    url: "https://learn.microsoft.com/en-us/graph/query-parameters"
+  - title: "Microsoft Graph documentation"
+    url: "https://learn.microsoft.com/en-us/graph/"
+
+"166":
+  - title: "Get mailbox settings / automatic replies (Microsoft Graph)"
+    url: "https://learn.microsoft.com/en-us/graph/api/user-get-mailboxsettings?view=graph-rest-1.0"
+  - title: "Get started with Power Automate approvals"
+    url: "https://learn.microsoft.com/en-us/power-automate/get-started-approvals"
+
+"167":
+  - title: "Workflow Definition Language functions reference (date and time)"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+
+"168":
+  - title: "Workflow Definition Language functions reference (result)"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+
+"169":
+  - title: "SharePoint Online connector reference (For a selected item)"
+    url: "https://learn.microsoft.com/en-us/connectors/sharepointonline/"
+  - title: "Working with the SharePoint Send HTTP Request flow action"
+    url: "https://learn.microsoft.com/en-us/sharepoint/dev/business-apps/power-automate/guidance/working-with-send-sp-http-request"
+
+"170":
+  - title: "Add tools to custom agents (Copilot Studio)"
+    url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-tools-custom-agent"
+  - title: "Agent flows overview (Copilot Studio)"
+    url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-overview"
+
+"171":
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+  - title: "Workflow Definition Language functions reference"
+    url: "https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference"
+
+"172":
+  - title: "Custom connectors overview"
+    url: "https://learn.microsoft.com/en-us/connectors/custom-connectors/"
+  - title: "Use expressions in conditions (Power Automate)"
+    url: "https://learn.microsoft.com/en-us/power-automate/use-expressions-in-conditions"
+
+"173":
+  - title: "Add tools to custom agents (Copilot Studio)"
+    url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-tools-custom-agent"
+  - title: "Custom connectors overview"
+    url: "https://learn.microsoft.com/en-us/connectors/custom-connectors/"
+
+"174":
+  - title: "Add tools to custom agents (Copilot Studio)"
+    url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-tools-custom-agent"
+  - title: "Agent flows overview (Copilot Studio)"
+    url: "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-overview"
