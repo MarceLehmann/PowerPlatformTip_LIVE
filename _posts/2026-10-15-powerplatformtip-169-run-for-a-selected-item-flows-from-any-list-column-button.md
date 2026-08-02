@@ -1,6 +1,6 @@
 ---
 title: "#PowerPlatformTip 169: 'Run a For-a-Selected-Item Flow from Any List with a Column Button'"
-date: 2026-10-15
+date: 2026-09-10
 categories:
   - Article
   - PowerPlatformTip
