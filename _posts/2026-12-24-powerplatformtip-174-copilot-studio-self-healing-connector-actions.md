@@ -1,6 +1,6 @@
 ---
 title: "#PowerPlatformTip 174: 'Self-Healing Connector Actions in Copilot Studio - Retry & Remember'"
-date: 2026-12-24
+date: 2026-10-15
 categories:
   - Article
   - PowerPlatformTip
