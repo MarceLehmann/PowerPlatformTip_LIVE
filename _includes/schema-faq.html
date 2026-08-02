@@ -1,13 +1,21 @@
 {%- comment -%}
   FAQPage structured data (JSON-LD).
-  Renders ONLY when the post defines `faq:` in front matter, e.g.:
 
-  faq:
-    - question: "How do I ...?"
-      answer: "You ..."
+  Two modes:
+  1. Explicit (takes precedence): if the post defines `faq:` in front
+     matter, render exactly those Q&A pairs, e.g.
 
-  IMPORTANT: the questions/answers should mirror FAQ content that is also
-  visible on the page (Google/AI expect matching on-page content).
+     faq:
+       - question: "How do I ...?"
+         answer: "You ..."
+
+  2. Automatic (fallback): otherwise, derive the Q&A from the post's
+     visible "## ... FAQ" section. Questions are full-line bold, either
+     **Q1: ...?** / **1. ...?** or any **... ?** line. This lets FAQPage
+     schema emit for every tip that has a visible FAQ, without any extra
+     front matter. Emits nothing when no parseable FAQ section exists.
+
+  IMPORTANT: the schema mirrors on-page content (Google/AI expect a match).
 {%- endcomment -%}
 {%- if page.faq and page.faq.size > 0 -%}
 <script type="application/ld+json">
@@ -28,4 +36,113 @@
   ]
 }
 </script>
+{%- elsif page.content -%}
+{%- assign nl = "
+" -%}
+{%- assign sep = nl | append: "## " -%}
+{%- assign parts = page.content | split: sep -%}
+{%- assign faq_found = false -%}
+{%- assign faq_section = "" -%}
+{%- assign faq_head = "" -%}
+{%- for part in parts -%}
+  {%- assign head = part | split: nl | first -%}
+  {%- if head contains "FAQ" -%}
+    {%- assign faq_section = part -%}
+    {%- assign faq_head = head -%}
+    {%- assign faq_found = true -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if faq_found -%}
+  {%- assign faq_body = faq_section | remove_first: faq_head -%}
+  {%- assign lines = faq_body | split: nl -%}
+  {%- assign delim = "|##PPTFAQ##|" -%}
+  {%- assign qs = "" -%}
+  {%- assign ans = "" -%}
+  {%- assign have_q = false -%}
+  {%- assign cur_q = "" -%}
+  {%- assign cur_answer = "" -%}
+  {%- for line in lines -%}
+    {%- assign t = line | strip -%}
+    {%- if t == "" -%}{%- continue -%}{%- endif -%}
+    {%- assign is_q = false -%}
+    {%- assign c0 = t | slice: 0, 2 -%}
+    {%- assign cE = t | slice: -2, 2 -%}
+    {%- if c0 == "**" and cE == "**" -%}
+      {%- if t contains "?" -%}
+        {%- assign is_q = true -%}
+      {%- else -%}
+        {%- assign p3 = t | slice: 0, 3 -%}
+        {%- assign d1 = t | slice: 3, 1 -%}
+        {%- if p3 == "**Q" and d1 != "" and "0123456789" contains d1 -%}
+          {%- assign is_q = true -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- if is_q -%}
+      {%- if have_q -%}
+        {%- assign qs = qs | append: cur_q | append: delim -%}
+        {%- assign ans = ans | append: cur_answer | append: delim -%}
+      {%- endif -%}
+      {%- assign cur_q = t -%}
+      {%- assign cur_answer = "" -%}
+      {%- assign have_q = true -%}
+    {%- else -%}
+      {%- if cur_answer == "" -%}
+        {%- assign cur_answer = t -%}
+      {%- else -%}
+        {%- assign cur_answer = cur_answer | append: " " | append: t -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if have_q -%}
+    {%- assign qs = qs | append: cur_q | append: delim -%}
+    {%- assign ans = ans | append: cur_answer | append: delim -%}
+  {%- endif -%}
+  {%- assign qarr = qs | split: delim -%}
+  {%- assign aarr = ans | split: delim -%}
+  {%- assign mainentity = "" -%}
+  {%- for q_raw in qarr -%}
+    {%- assign a_raw = aarr[forloop.index0] -%}
+    {%- assign q_clean = q_raw | replace: "**", "" | strip -%}
+    {%- assign a_clean = a_raw | strip -%}
+    {%- assign w0 = q_clean | split: " " | first -%}
+    {%- assign wlen = w0 | size -%}
+    {%- assign wlast = w0 | slice: -1, 1 -%}
+    {%- assign wfirst = w0 | slice: 0, 1 -%}
+    {%- assign is_label = false -%}
+    {%- if wlen > 0 and wlen <= 4 -%}
+      {%- if wlast == ":" or wlast == "." -%}
+        {%- if wfirst == "Q" -%}
+          {%- assign is_label = true -%}
+        {%- elsif "0123456789" contains wfirst -%}
+          {%- assign is_label = true -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- if is_label -%}
+      {%- assign q_clean = q_clean | remove_first: w0 | remove_first: " " -%}
+    {%- endif -%}
+    {%- assign q_clean = q_clean | strip -%}
+    {%- if q_clean != "" and a_clean != "" -%}
+      {%- assign q_json = q_clean | markdownify | strip_html | strip_newlines | strip | jsonify -%}
+      {%- assign a_json = a_clean | markdownify | strip_html | strip_newlines | strip | jsonify -%}
+      {%- capture item -%}{"@type":"Question","name":{{ q_json }},"acceptedAnswer":{"@type":"Answer","text":{{ a_json }}}}{%- endcapture -%}
+      {%- if mainentity == "" -%}
+        {%- assign mainentity = item -%}
+      {%- else -%}
+        {%- assign mainentity = mainentity | append: "," | append: item -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if mainentity != "" -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{{ mainentity }}]
+}
+</script>
+  {%- endif -%}
+{%- endif -%}
 {%- endif -%}
