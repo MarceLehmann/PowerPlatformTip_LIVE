@@ -1,6 +1,6 @@
 ---
 title: "#PowerPlatformTip 168: 'Collect Failed Action Details with the result() Function'"
-date: 2026-10-01
+date: 2026-09-03
 categories:
   - Article
   - PowerPlatformTip
