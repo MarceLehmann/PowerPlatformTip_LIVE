@@ -3,10 +3,16 @@ Enhanced Schema.org structured data for PowerPlatformTip
 Supports: Organization, Person, Article
 Note: BreadcrumbList is emitted by breadcrumbs-enhanced.html (visible breadcrumb)
 to keep a single, category-based source of truth.
+
+Entity note: The publishing entity is the sole proprietorship KMUpower
+(owner Marcel Lehmann, Weidstrasse 1, CH-8320 Fehraltorf, UID CHE-296.591.945).
+The former name "The Power Addicts" is retired, thepoweraddicts.ch redirects to
+kmupower.com. Keep every sameAs and worksFor reference pointing at KMUpower so
+search engines and AI answer engines resolve one single, unambiguous entity.
 {%- endcomment -%}
 
 {%- if page.url == '/' or page.layout == 'home' -%}
-{%- comment -%} Homepage: Organization/Person Schema {%- endcomment -%}
+{%- comment -%} Homepage: Person Schema {%- endcomment -%}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -17,38 +23,36 @@ to keep a single, category-based source of truth.
   "image": "{{ '/assets/images/bio-photo.jfif' | absolute_url }}",
   "jobTitle": "Microsoft Business Applications MVP & Power Platform Consultant",
   "description": "{{ site.description }}",
-  "alumniOf": "BizzApps MVP",
   "award": "Microsoft Business Applications MVP (since 2023)",
-  "knowsAbout": ["Power Apps", "Power Automate", "Copilot Studio", "Microsoft Power Platform", "Dataverse"],
+  "knowsAbout": ["Power Apps", "Power Automate", "Copilot Studio", "Microsoft Power Platform", "Dataverse", "Power Fx", "Power Platform Governance", "Power Platform ALM"],
+  "knowsLanguage": ["de", "en"],
   "sameAs": [
     "https://www.wikidata.org/wiki/Q137434127",
     "https://www.linkedin.com/in/marcelehmann",
     "https://mvp.microsoft.com/de-DE/MVP/profile/f67ec6c7-f116-ee11-8f6e-000d3a1ad36b",
-    "https://www.kmupower.com",
-    "https://www.thepoweraddicts.com"
+    "https://github.com/MarceLehmann",
+    "https://kmupower.com",
+    "https://www.powerplatformacademy.online"
   ],
-  "worksFor": [
-    {
-      "@type": "Organization",
-      "name": "KMUpower",
-      "url": "https://www.kmupower.com"
-    },
-    {
-      "@type": "Organization",
-      "name": "ThePowerAddicts",
-      "url": "https://www.thepoweraddicts.com"
-    },
-    {
-      "@type": "Organization",
-      "name": "PowerPlatformTip",
-      "url": "https://www.powerplatformtip.com"
+  "worksFor": {
+    "@type": "Organization",
+    "@id": "https://kmupower.com/#organization",
+    "name": "KMUpower",
+    "url": "https://kmupower.com",
+    "vatID": "CHE-296.591.945",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Weidstrasse 1",
+      "postalCode": "8320",
+      "addressLocality": "Fehraltorf",
+      "addressCountry": "CH"
     }
-  ],
-  "nationality": "German",
+  },
   "address": {
     "@type": "PostalAddress",
-    "addressCountry": "CH",
-    "addressRegion": "Switzerland"
+    "addressLocality": "Fehraltorf",
+    "postalCode": "8320",
+    "addressCountry": "CH"
   }
 }
 </script>
@@ -79,17 +83,24 @@ to keep a single, category-based source of truth.
   {%- endif %}
   "author": {
     "@type": "Person",
+    "@id": "https://www.wikidata.org/wiki/Q137434127",
     "name": "{{ author.name | default: author | default: 'Marcel Lehmann' }}",
     "url": "{{ site.url }}/about/",
+    "jobTitle": "Microsoft Business Applications MVP & Power Platform Consultant",
+    "award": "Microsoft Business Applications MVP (since 2023)",
+    "knowsAbout": ["Power Apps", "Power Automate", "Copilot Studio", "Microsoft Power Platform", "Dataverse"],
     "sameAs": [
+      "https://www.wikidata.org/wiki/Q137434127",
       "https://www.linkedin.com/in/marcelehmann/",
-      "https://mvp.microsoft.com/de-DE/MVP/profile/f67ec6c7-f116-ee11-8f6e-000d3a1ad36b"
+      "https://mvp.microsoft.com/de-DE/MVP/profile/f67ec6c7-f116-ee11-8f6e-000d3a1ad36b",
+      "https://github.com/MarceLehmann"
     ]
   },
   "publisher": {
     "@type": "Organization",
-    "name": "PowerPlatformTip",
-    "url": "{{ site.url }}",
+    "@id": "https://kmupower.com/#organization",
+    "name": "KMUpower",
+    "url": "https://kmupower.com",
     "logo": {
       "@type": "ImageObject",
       "url": "{{ '/assets/images/bio-photo.jfif' | absolute_url }}"
@@ -105,6 +116,7 @@ to keep a single, category-based source of truth.
   {% if page.tags -%}
   "keywords": {{ page.tags | join: ', ' | jsonify }},
   {%- endif %}
+  "isAccessibleForFree": true,
   "inLanguage": "en-US",
   "url": "{{ page.url | absolute_url }}"
 }
