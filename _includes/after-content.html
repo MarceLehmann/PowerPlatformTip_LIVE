@@ -1,23 +1,41 @@
-<!-- Content removed - Newsletter moved to popup -->
+{%- comment -%}
+E-E-A-T author box, rendered after the content of every post.
+Purpose: make authorship, credentials and verifiable profiles visible to readers,
+to Google (helpful content: "who wrote this and why are they qualified")
+and to AI answer engines that look for a trustworthy, citable source.
+The markup mirrors the Person data in _includes/schema.html, so the visible
+content and the structured data always tell the same story.
+Previously this file was empty and contained an orphaned closing div.
+{%- endcomment -%}
 
-
-
-  
-  <!-- Option 2: Simple mailto link (backup) -->
-  <!-- 
-  <div class="newsletter-simple">
-    <a href="mailto:your-email@domain.com?subject=Newsletter Subscription&body=Hi, I would like to subscribe to your PowerPlatform newsletter." class="btn btn--primary">
-      📧 Subscribe via Email
-    </a>
+{%- if page.layout == 'single' and page.date -%}
+<aside class="pptip-author-box" style="margin:2.5rem 0 1rem;padding:1.25rem;border:1px solid #e5e7eb;border-radius:12px;background:#fafafa;">
+  <div style="display:flex;gap:1rem;align-items:flex-start;flex-wrap:wrap;">
+    <img src="{{ '/assets/images/bio-photo.jfif' | relative_url }}"
+         alt="Marcel Lehmann, Microsoft Business Applications MVP"
+         width="72" height="72" loading="lazy" decoding="async"
+         style="width:72px;height:72px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+    <div style="flex:1;min-width:240px;">
+      <p style="margin:0 0 .35rem;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:#6b7280;">Written by</p>
+      <p style="margin:0 0 .5rem;font-size:1.05rem;font-weight:700;">Marcel Lehmann</p>
+      <p style="margin:0 0 .75rem;font-size:.9rem;line-height:1.5;color:#374151;">
+        Microsoft Business Applications MVP since 2023 and Power Platform consultant based in Switzerland.
+        Every tip on this site comes from real customer projects with Power Apps, Power Automate,
+        Dataverse and Copilot Studio, tested before it is published.
+      </p>
+      <p style="margin:0;font-size:.85rem;line-height:1.9;">
+        <a href="https://mvp.microsoft.com/de-DE/MVP/profile/f67ec6c7-f116-ee11-8f6e-000d3a1ad36b" rel="noopener nofollow" target="_blank">Microsoft MVP profile</a> &middot;
+        <a href="https://www.linkedin.com/in/marcelehmann/" rel="noopener nofollow" target="_blank">LinkedIn</a> &middot;
+        <a href="https://github.com/MarceLehmann" rel="noopener nofollow" target="_blank">GitHub</a> &middot;
+        <a href="https://kmupower.com" rel="noopener" target="_blank">KMUpower</a> &middot;
+        <a href="{{ '/about/' | relative_url }}">About</a>
+      </p>
+    </div>
   </div>
-  -->
-  
-  <!-- Option 3: Link to external newsletter service -->
-  <!--
-  <div class="newsletter-external">
-    <a href="https://your-newsletter-service.com/subscribe" target="_blank" rel="noopener" class="btn btn--primary">
-      📧 Subscribe to Newsletter
-    </a>
-  </div>
-  -->
-</div>
+  <p style="margin:1rem 0 0;font-size:.8rem;color:#6b7280;">
+    Published {{ page.date | date: "%B %-d, %Y" }}{% if page.last_modified_at or page.updated %}, last reviewed {{ page.last_modified_at | default: page.updated | date: "%B %-d, %Y" }}{% endif %}.
+    Found something outdated? Microsoft ships changes fast, so please
+    <a href="{{ '/about/' | relative_url }}">let me know</a> and I will update the article.
+  </p>
+</aside>
+{%- endif -%}
