@@ -1,6 +1,6 @@
 {%- comment -%}
 Enhanced Schema.org structured data for PowerPlatformTip
-Supports: Organization, Person, Article, FAQPage
+Supports: Organization, Person, Article
 Note: BreadcrumbList is emitted by breadcrumbs-enhanced.html (visible breadcrumb)
 to keep a single, category-based source of truth.
 {%- endcomment -%}
@@ -107,41 +107,6 @@ to keep a single, category-based source of truth.
   {%- endif %}
   "inLanguage": "en-US",
   "url": "{{ page.url | absolute_url }}"
-}
-</script>
-{%- endif -%}
-
-{%- comment -%}
-FAQPage schema (front-matter driven, opt-in).
-Add to a post's front matter to enable FAQ rich results and AI-answer citations:
-
-faq:
-  - q: "Your question here?"
-    a: "Your answer here. Plain text or simple Markdown."
-  - q: "..."
-    a: "..."
-
-Only emitted when page.faq is present, so posts without it are unaffected.
-The visible FAQ section must remain on the page (Google requires the answer
-text to be present in the page content).
-{%- endcomment -%}
-{%- if page.faq and page.faq.size > 0 -%}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {%- for item in page.faq -%}
-    {
-      "@type": "Question",
-      "name": {{ item.q | markdownify | strip_html | strip_newlines | jsonify }},
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": {{ item.a | markdownify | strip_html | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip | jsonify }}
-      }
-    }{%- unless forloop.last -%},{%- endunless -%}
-    {%- endfor -%}
-  ]
 }
 </script>
 {%- endif -%}
