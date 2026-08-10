@@ -1,4 +1,11 @@
 <!-- Person Schema for Marcel Lehmann -->
+<!--
+  Entity rule: the same @id (Wikidata) is used in _includes/schema.html so that
+  every page describes ONE person, not several similar-looking ones.
+  worksFor points to a single employer node: https://kmupower.com/#organization
+  (KMUpower is the sole proprietorship of Marcel Lehmann; thepoweraddicts.ch
+  now redirects to kmupower.com, so it must not appear as a separate entity).
+-->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -13,12 +20,28 @@
     "Microsoft Power Platform",
     "Power Apps",
     "Power Automate",
+    "Power Fx",
+    "Dataverse",
     "Copilot Studio",
     "Power Virtual Agents",
+    "Power Platform Governance",
+    "Application Lifecycle Management",
     "Business Process Automation",
     "Low-Code Development",
     "Microsoft 365",
     "Business Applications"
+  ],
+  "knowsLanguage": [
+    {
+      "@type": "Language",
+      "name": "German",
+      "alternateName": "de"
+    },
+    {
+      "@type": "Language",
+      "name": "English",
+      "alternateName": "en"
+    }
   ],
   "alumniOf": {
     "@type": "EducationalOrganization",
@@ -50,38 +73,42 @@
       "credentialCategory": "PL-500"
     }
   ],
-  "nationality": {
-    "@type": "Country",
-    "name": "Germany"
+  "workLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Fehraltorf",
+      "postalCode": "8320",
+      "addressCountry": "CH"
+    }
   },
   "sameAs": [
     "https://www.wikidata.org/wiki/Q137434127",
     "https://www.linkedin.com/in/marcelehmann",
-    "https://www.kmupower.com",
-    "https://www.thepoweraddicts.com"
+    "https://github.com/MarceLehmann",
+    "https://mvp.microsoft.com/en-US/MVP/profile/f67ec6c7-f116-ee11-8f6e-000d3a1ad36b",
+    "https://kmupower.com",
+    "https://www.powerplatformacademy.online"
   ],
   "memberOf": {
     "@type": "Organization",
     "name": "Power Platform User Group Switzerland (D-CH) - #PPUGS",
     "url": "https://www.linkedin.com/groups/12703022"
   },
-  "worksFor": [
-    {
-      "@type": "Organization",
-      "name": "KMUpower",
-      "url": "https://www.kmupower.com"
-    },
-    {
-      "@type": "Organization",
-      "name": "ThePowerAddicts",
-      "url": "https://www.thepoweraddicts.com"
-    },
-    {
-      "@type": "Organization",
-      "name": "PowerPlatformTip",
-      "url": "https://www.powerplatformtip.com"
+  "worksFor": {
+    "@type": "Organization",
+    "@id": "https://kmupower.com/#organization",
+    "name": "KMUpower",
+    "url": "https://kmupower.com",
+    "vatID": "CHE-296.591.945",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Weidstrasse 1",
+      "postalCode": "8320",
+      "addressLocality": "Fehraltorf",
+      "addressCountry": "CH"
     }
-  ],
+  },
   "affiliation": {
     "@type": "Organization",
     "name": "Microsoft MVP Program"
