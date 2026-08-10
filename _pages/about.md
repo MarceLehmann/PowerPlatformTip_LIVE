@@ -4,7 +4,7 @@ title: "About Marcel Lehmann - Microsoft Power Platform MVP | PowerPlatformTip"
 permalink: /about/
 description: "Marcel Lehmann, Microsoft Business Applications MVP from Switzerland. Expert in Power Apps, Power Automate and Copilot Studio. Coaching, consulting & training for Power Platform solutions."
 excerpt: "Discover PowerPlatformTip by Marcel Lehmann, BizzApps MVP providing expert guidance on Microsoft Power Platform including Power Apps, Power Automate and Copilot Studio solutions."
-keywords: "Marcel Lehmann, Power Platform MVP, Power Apps expert, Power Automate consultant, Copilot Studio specialist, Microsoft MVP, Switzerland, PowerPlatform tips, BizzApps MVP, ThePowerAddicts"
+keywords: "Marcel Lehmann, Power Platform MVP, Power Apps expert, Power Automate consultant, Copilot Studio specialist, Microsoft MVP, Switzerland, PowerPlatform tips, BizzApps MVP, KMUpower"
 author_profile: false
 sitemap:
   priority: 0.9
@@ -128,8 +128,8 @@ Have questions about Power Platform implementation or want to discuss your speci
 <div class="about-cta">
   <div class="about-cta__primary">
     <h3><i class="fas fa-chalkboard-teacher"></i> Professional Services</h3>
-    <p>Need expert guidance for your Power Platform project? Get personalized workshops, consulting, and training.</p>
-    <a href="https://www.thepoweraddicts.com" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">
+    <p>Need expert guidance for your Power Platform project? Get personalized workshops, consulting, and training through KMUpower.</p>
+    <a href="https://kmupower.com/" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">
       <i class="fas fa-arrow-right"></i> Explore Services
     </a>
   </div>
