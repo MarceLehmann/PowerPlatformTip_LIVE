@@ -1,7 +1,7 @@
 ---
 title: "#PowerPlatformTip 117: 'Optimize Parallel Object Processing'"
 date: 2024-07-16
-last_modified_at: 2026-07-09
+last_modified_at: 2026-07-20
 categories:
   - Article
   - PowerPlatformTip
@@ -18,6 +18,13 @@ header:
   overlay_filter: "0.5"
 toc: true
 toc_sticky: true
+faq:
+  - question: "How do I set concurrency in Apply to Each?"
+    answer: "Adjust the concurrency control in the \"Apply to each\" action settings up to a maximum of 50 parallel runs. Beyond that, use child flows or database triggers."
+  - question: "What are child flows and why use them?"
+    answer: "Child flows are separate flows invoked from a parent flow. They let you process items independently and in parallel, bypassing the parent flow's concurrency limits."
+  - question: "How do I handle errors in child flows?"
+    answer: "Use scopes and configure run-after settings inside the child flow. Log failures to a database or send notifications, and optionally retry or resubmit failed runs later."
 ---
 
 > **TL;DR:** Break past the 50-item Apply to Each limit in Power Automate using child flows or database triggers for true parallel processing.
@@ -77,5 +84,5 @@ Child flows are separate flows invoked from a parent flow. They let you process 
 Use scopes and configure run-after settings inside the child flow. Log failures to a database or send notifications, and optionally retry or resubmit failed runs later.
 
 ## 🔗 Related Tips
-- [#PowerPlatformTip 77: Optimize Parallel Object Processing](https://www.powerplatformtip.com/article/powerplatformtip/powerplatformtip-77-optimize-parallel-object-processing/), the companion piece on parallelizing item processing.
 - [#PowerPlatformTip 75: Boost Efficiency with Concurrency Control](https://www.powerplatformtip.com/article/powerplatformtip/powerplatformtip-75-boost-efficiency-with-concurrency-control/), tune the Apply to each concurrency setting.
+- [#PowerPlatformTip 131: ForAll & Patch Optimization in PowerApps](https://www.powerplatformtip.com/article/powerplatformtip/powerplatformtip-131-forall-patch-optimization-in-powerapps/), optimise bulk item operations.
