@@ -19,12 +19,12 @@ header:
 toc: true
 toc_sticky: true
 faq:
-  - q: "How do I set concurrency in Apply to Each?"
-    a: "Adjust the concurrency control in the \"Apply to each\" action settings up to a maximum of 50 parallel runs. Beyond that, use child flows or database triggers."
-  - q: "What are child flows and why use them?"
-    a: "Child flows are separate flows invoked from a parent flow. They let you process items independently and in parallel, bypassing the parent flow's concurrency limits."
-  - q: "How do I handle errors in child flows?"
-    a: "Use scopes and configure run-after settings inside the child flow. Log failures to a database or send notifications, and optionally retry or resubmit failed runs later."
+  - question: "How do I set concurrency in Apply to Each?"
+    answer: "Adjust the concurrency control in the \"Apply to each\" action settings up to a maximum of 50 parallel runs. Beyond that, use child flows or database triggers."
+  - question: "What are child flows and why use them?"
+    answer: "Child flows are separate flows invoked from a parent flow. They let you process items independently and in parallel, bypassing the parent flow's concurrency limits."
+  - question: "How do I handle errors in child flows?"
+    answer: "Use scopes and configure run-after settings inside the child flow. Log failures to a database or send notifications, and optionally retry or resubmit failed runs later."
 ---
 
 > **TL;DR:** Break past the 50-item Apply to Each limit in Power Automate using child flows or database triggers for true parallel processing.
