@@ -73,9 +73,6 @@ Starting from nothing but a personal email, you now own a Microsoft Entra tenant
 
 🔸 **No capacity hit:** developer environments don't consume tenant storage capacity.
 
-## 🎥 Video Tutorial
-{% include video id="VIDEO_ID" provider="youtube" %}
-
 ## 🛠️ FAQ
 
 **Q1: Will my credit card be charged?**
