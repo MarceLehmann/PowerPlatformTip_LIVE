@@ -1,6 +1,6 @@
 ---
 title: "#PowerPlatformTip 173: 'Let Copilot Studio Build the Call - Your Connector as an AI Tool'"
-date: 2026-10-08
+date: 2026-08-27
 categories:
   - Article
   - PowerPlatformTip
@@ -87,7 +87,7 @@ Only if the tool uses a **maker-provided (shared) connection**. With user-provid
 
 **Q5: What happens when the call fails, and what about payload limits?**
 
-Bound directly, a non-2xx becomes `connectorRequestFailure` **before** the LLM sees the body, so it can't self-heal - wrap it in a flow ([#PowerPlatformTip 174](https://www.powerplatformtip.com/article/powerplatformtip/powerplatformtip-174-copilot-studio-self-healing-connector-actions/)). Also note Copilot Studio caps connector payloads (5 MB public cloud; 450 KB GCC), so filter large MOCO lists with query/limit inputs. Start with read-only `GET`s, validate, then enable writes.
+Bound directly, a non-2xx becomes `connectorRequestFailure` **before** the LLM sees the body, so it can't self-heal - wrap it in a flow ([#PowerPlatformTip 174](https://www.powerplatformtip.com/article/powerplatformtip/powerplatformtip-174-copilot-studio-self-healing-connector-actions/)). Also note Copilot Studio caps connector payloads (5 MB public cloud; 450 KB GCC), so filter large MOCO lists with query/limit inputs.
 
 ## 🔗 Related Tips
 - [#PowerPlatformTip 172: One Custom Connector, Any Endpoint](https://www.powerplatformtip.com/article/powerplatformtip/powerplatformtip-172-generic-custom-connector-dynamic-http-request/), the connector this tip turns into an AI tool.
