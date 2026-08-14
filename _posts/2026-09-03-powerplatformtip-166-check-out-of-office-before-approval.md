@@ -1,6 +1,6 @@
 ---
 title: "#PowerPlatformTip 166: 'Check if a Person Is Out of Office Before an Approval'"
-date: 2026-08-20
+date: 2026-09-17
 categories:
   - Article
   - PowerPlatformTip
