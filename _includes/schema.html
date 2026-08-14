@@ -9,6 +9,11 @@ Entity note: The publishing entity is the sole proprietorship KMUpower
 The former name "The Power Addicts" is retired, thepoweraddicts.ch redirects to
 kmupower.com. Keep every sameAs and worksFor reference pointing at KMUpower so
 search engines and AI answer engines resolve one single, unambiguous entity.
+
+Origin vs residence: Marcel Lehmann is a German national, born in Dresden, and
+has been living and working in Switzerland since 2011. Therefore nationality =
+DE, while homeLocation, address and workLocation = Fehraltorf, CH. Keep these
+properties in sync with _includes/schema-person.html, which renders on /about/.
 {%- endcomment -%}
 
 {%- if page.url == '/' or page.layout == 'home' -%}
@@ -26,6 +31,30 @@ search engines and AI answer engines resolve one single, unambiguous entity.
   "award": "Microsoft Business Applications MVP (since 2023)",
   "knowsAbout": ["Power Apps", "Power Automate", "Copilot Studio", "Microsoft Power Platform", "Dataverse", "Power Fx", "Power Platform Governance", "Power Platform ALM"],
   "knowsLanguage": ["de", "en"],
+  "nationality": {
+    "@type": "Country",
+    "name": "Germany",
+    "alternateName": "DE"
+  },
+  "birthPlace": {
+    "@type": "Place",
+    "name": "Dresden",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dresden",
+      "addressCountry": "DE"
+    }
+  },
+  "homeLocation": {
+    "@type": "Place",
+    "name": "Fehraltorf, Switzerland",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Fehraltorf",
+      "postalCode": "8320",
+      "addressCountry": "CH"
+    }
+  },
   "sameAs": [
     "https://www.wikidata.org/wiki/Q137434127",
     "https://www.linkedin.com/in/marcelehmann",
