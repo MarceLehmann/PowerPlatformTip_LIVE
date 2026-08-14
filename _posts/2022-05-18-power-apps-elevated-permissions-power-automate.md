@@ -23,6 +23,15 @@ tags:
   - SharePoint
   - Security
   - YouTube
+faq:
+  - question: "Can Power Apps users run actions they do not have permission for?"
+    answer: "Yes. The post shows how a flow using the PowerApps V2 connector can run actions with a service account and impersonation while the user keeps the normal app experience."
+  - question: "Does this elevated-permissions approach work with any Power Apps connector?"
+    answer: "No. The post explicitly says this technique works only with the PowerApps V2 connector."
+  - question: "Do I still need child flows to handle elevated permissions in Power Apps?"
+    answer: "Not for this pattern. The article presents direct integration with the PowerApps V2 connector as a simpler alternative to child flows."
+  - question: "What does the service account need for this setup?"
+    answer: "The service account needs the required administrative access on the target systems plus the relevant Power Platform, SharePoint, or Dataverse permissions used by the flow."
 ---
 
 Brilliant solution from Reza Dorrani! This demonstrates how end users can create entries without sufficient permissions through Power Automate's impersonation capabilities. A game-changer for permission management in Power Platform.

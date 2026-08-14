@@ -23,6 +23,15 @@ tags:
   - APIOptimization
   - Efficiency
   - YouTube
+faq:
+  - question: "What is the main difference between Power Automate flows and SharePoint Automate Rules?"
+    answer: "Power Automate flows trigger on every relevant change and evaluate conditions after the flow starts. SharePoint Automate Rules evaluate conditions first and only trigger when the rule matches."
+  - question: "When should I use SharePoint Automate Rules instead of a Power Automate flow?"
+    answer: "Use SharePoint Rules for simple, high-frequency conditions and direct actions such as notifications. The post highlights them as a good fit for reducing unnecessary API calls through pre-filtering."
+  - question: "When is Power Automate still the better choice?"
+    answer: "Power Automate is better for complex business logic, rich data manipulation, multi-system integrations, and advanced error handling."
+  - question: "Can a hybrid approach improve performance?"
+    answer: "Yes. The article describes combining SharePoint Rules with Power Automate for complex follow-up processing and reports that this can cut unnecessary API calls by up to 90 percent."
 ---
 
 Fascinating analysis from Daniel Christian! This comparison reveals crucial performance differences between Power Automate Flows and SharePoint Automate Rules, highlighting when each approach delivers optimal efficiency.
