@@ -24,7 +24,7 @@ name                     : "Marcel Lehmann"
 description              : "Learn and find tips & tricks around the Power Platform. Your go-to source for insights on Power Apps, Power Automate, and more, by Marcel Lehmann, BizzApps MVP."
 url: "https://www.powerplatformtip.com" # Canonical = www (matches CNAME served by GitHub Pages; non-www 301s to www)
 baseurl: ""
-repository: "MarceLehmann/PowerPlatformTip"
+repository: "MarceLehmann/PowerPlatformTip_LIVE"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
