@@ -94,3 +94,7 @@ Bound directly, a non-2xx becomes `connectorRequestFailure` **before** the LLM s
 - [#PowerPlatformTip 174: Self-Healing Connector Actions in Copilot Studio](https://www.powerplatformtip.com/article/powerplatformtip/powerplatformtip-174-copilot-studio-self-healing-connector-actions/), wrap the call so the agent retries and remembers the fix.
 - [#PowerPlatformTip 170: One Flow, Many Tools - a Switch Router for Copilot Studio Agents](https://www.powerplatformtip.com/article/powerplatformtip/powerplatformtip-170-flow-as-agent-tool-switch-router/), the internal, no-connector way to give an agent a tool.
 - [#PowerPlatformTip 138: Graph API via HTTP with Microsoft Entra ID](https://www.powerplatformtip.com/article/powerplatformtip/PowerPlatformTip-138-Graph-API-HTTP/), central auth without an app registration.
+
+---
+
+> 📌 **Scheduling note:** I moved this tip forward in the publishing schedule - the rest of this Copilot Studio series (and some of the related tips referenced above, e.g. #172 and #174) are published later and will follow in the coming weeks.
