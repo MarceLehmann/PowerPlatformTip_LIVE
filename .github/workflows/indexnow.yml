@@ -1,25 +1,51 @@
-name: "IndexNow Submission"
+name: IndexNow Ping
+
+# Meldet die Kern-URLs nach jedem Content-Push an IndexNow (Bing, Copilot,
+# Yandex u. a.), damit neue oder geaenderte Seiten schneller gecrawlt werden.
+# Ergaenzt die normale Sitemap-Erfassung; ersetzt sie nicht.
 
 on:
-  workflow_run:
-    workflows: ["Deploy Jekyll site to Pages"]
-    types: [completed]
-  schedule:
-    - cron: '0 2 * * *' # daily at 02:00 UTC
-  workflow_dispatch:
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - '_posts/**'
+      - '_pages/**'
+      - '_includes/**'
+      - 'llms.txt'
+  workflow_dispatch: {}
 
 permissions:
   contents: read
 
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
 jobs:
-  submit-to-indexnow:
+  ping:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
     steps:
-      - name: Submit sitemap to IndexNow
-        uses: bojieyang/indexnow-action@v2
-        with:
-          sitemap-location: "https://powerplatformtip.com/sitemap.xml"
-          key: ${{ secrets.INDEXNOW_KEY }}
-          since: 1
-          since-unit: "week"
+      - name: Submit Kern-URLs an IndexNow
+        run: |
+          curl -sS --fail-with-body -X POST https://api.indexnow.org/indexnow \
+            -H 'Content-Type: application/json; charset=utf-8' \
+            -d '{
+              "host": "www.powerplatformtip.com",
+              "key": "363df83c959f7d239713353630049a67",
+              "keyLocation": "https://www.powerplatformtip.com/363df83c959f7d239713353630049a67.txt",
+              "urlList": [
+                "https://www.powerplatformtip.com/",
+                "https://www.powerplatformtip.com/posts/",
+                "https://www.powerplatformtip.com/topics/",
+                "https://www.powerplatformtip.com/about/",
+                "https://www.powerplatformtip.com/article/powerplatform/2022/08/30/how-to-restore-create-backup-flow/",
+                "https://www.powerplatformtip.com/article/powerplatform/2022/05/18/power-apps-elevated-permissions-power-automate/",
+                "https://www.powerplatformtip.com/article/powerplatform/2022/11/10/extract-html-table-email-power-automate/",
+                "https://www.powerplatformtip.com/article/powerplatform/2022/04/20/implement-onkeydown-onkeypress-powerapps-text-input/",
+                "https://www.powerplatformtip.com/article/powerplatform/2022/03/09/power-automate-flows-vs-automate-rules/",
+                "https://www.powerplatformtip.com/article/powerplatform/2021/08/23/power-apps-refresh-alternative-method-performance/"
+              ]
+            }'
