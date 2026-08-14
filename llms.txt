@@ -29,6 +29,7 @@ Longer, comprehensive walkthroughs with step-by-step instructions and code:
 - [Run Power Apps actions with elevated permissions](https://www.powerplatformtip.com/article/powerplatform/2022/05/18/power-apps-elevated-permissions-power-automate/): Use the Power Apps V2 connector and impersonation so standard users can perform privileged operations without child flows.
 - [Extract an HTML table from an email](https://www.powerplatformtip.com/article/powerplatform/2022/11/10/extract-html-table-email-power-automate/): Parse HTML emails as XML and use XPath to reliably pull tabular data into your flows.
 - [OnKeyDown / OnKeyPress in Power Apps text input](https://www.powerplatformtip.com/article/powerplatform/2022/04/20/implement-onkeydown-onkeypress-powerapps-text-input/): Simulate keyboard events with repurposed slider and toggle controls for real-time search and validation.
+- [Power Automate flows vs SharePoint Automate Rules](https://www.powerplatformtip.com/article/powerplatform/2022/03/09/power-automate-flows-vs-automate-rules/): Performance comparison and hybrid pattern — use SharePoint rules for pre-filtering and flows for complex logic to cut unnecessary API calls by up to 90 percent.
 - [Fix Power Apps Refresh performance](https://www.powerplatformtip.com/article/powerplatform/2021/08/23/power-apps-refresh-alternative-method-performance/): Replace repeated Refresh() calls with an UpdateContext pattern to avoid the 30-second identical-query block.
 
 ## More
