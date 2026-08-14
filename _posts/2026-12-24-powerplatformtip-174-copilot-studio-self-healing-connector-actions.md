@@ -96,3 +96,7 @@ Put a **max-attempts** rule in the agent instructions (e.g. try at most 3 times,
 - [#PowerPlatformTip 172: One Custom Connector, Any Endpoint](https://www.powerplatformtip.com/article/powerplatformtip/powerplatformtip-172-generic-custom-connector-dynamic-http-request/), the connector behind the flow.
 - [#PowerPlatformTip 15: try-catch-finally](https://www.powerplatformtip.com/article/powerplatformtip/powerplatformtip-15-try-catch-finally/), the error-handling backbone of the flow wrapper.
 - [#PowerPlatformTip 45: Use Scopes](https://www.powerplatformtip.com/article/powerplatformtip/powerplatformtip-45-use-scopes/), group and isolate the HTTP call for clean run-after handling.
+
+---
+
+> 📌 **Scheduling note:** I moved this tip forward in the publishing schedule - the rest of this Copilot Studio series (and some of the related tips referenced above, e.g. #172 and #168) are published later and will follow in the coming weeks.
