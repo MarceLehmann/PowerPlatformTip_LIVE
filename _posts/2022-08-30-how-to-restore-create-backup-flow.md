@@ -22,6 +22,15 @@ tags:
   - Dataverse
   - OneDrive
   - PowerPlatform
+faq:
+  - question: "Is there a native way to restore an earlier version of a Power Automate flow?"
+    answer: "No simple standard solution is described. The post instead outlines three backup and restore strategies to avoid losing earlier versions in the future."
+  - question: "How does the solution-based backup method work for Power Automate flows?"
+    answer: "You place the flow in a backup solution and export that solution as a ZIP file, for example to OneDrive for Business. The restore process then imports that saved customization file back into the environment."
+  - question: "Are Dataverse actions premium in the solution backup approach?"
+    answer: "No. The article explicitly states that the Dataverse actions used in this method are not premium and can be used with standard licensing."
+  - question: "When is the direct flow backup method most useful?"
+    answer: "The post recommends it during development or customization. A backup can be created at the end of a successful run so you always keep the last successful flow version."
 ---
 
 ![Hard Disk Drive - Backup Concept](/assets/images/posts/2022/08/pexels-photo-6429164.jpeg){: .align-center}

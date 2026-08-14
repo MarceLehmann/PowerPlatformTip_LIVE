@@ -23,6 +23,15 @@ tags:
   - ControlWorkarounds
   - InteractionDesign
   - YouTube
+faq:
+  - question: "Do PowerApps text inputs support OnKeyDown or OnKeyPress events natively?"
+    answer: "No. The post explains that text input controls do not provide native OnKeyDown or OnKeyPress behavior."
+  - question: "How can I simulate keyboard-style events in a PowerApps text input?"
+    answer: "The article uses hidden controls such as sliders and toggles whose change events are bound to the text input. Those controls act as workarounds for immediate input detection and response."
+  - question: "What scenarios can these PowerApps keyboard-event workarounds support?"
+    answer: "The post shows real-time search, live validation, character counting, and auto-complete as practical uses for the pattern."
+  - question: "What are the limitations of these keyboard-event workarounds in PowerApps?"
+    answer: "They simulate keyboard behavior rather than providing true keyboard events. The article also notes possible performance and maintenance overhead from multiple hidden controls, so testing across devices is important."
 ---
 
 Ingenious approach from Paulie M! This demonstrates creative ways to implement keyboard event handling in PowerApps by repurposing existing controls like sliders and toggles for enhanced user interactions.
