@@ -28,32 +28,31 @@
           <span>MVP-level expertise</span>
         </div>
       </div>
-      
-      <form class="after-content-cta__form" action="https://powerplatformtip.us14.list-manage.com/subscribe/post?u=YOUR_USER_ID&amp;id=YOUR_LIST_ID" method="post" target="_blank" novalidate>
-        <div class="after-content-cta__input-group">
-          <input type="email" 
-                 name="EMAIL" 
-                 class="after-content-cta__input" 
-                 placeholder="Enter your email address" 
-                 required 
-                 aria-label="Email address">
-          <button type="submit" class="after-content-cta__button">
-            Subscribe Now
-          </button>
-        </div>
-        
-        <!-- Honeypot -->
-        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-          <input type="text" name="b_YOUR_USER_ID_YOUR_LIST_ID" tabindex="-1" value="">
-        </div>
-        
-        <p class="after-content-cta__privacy">
-          <small>
-            <i class="fas fa-lock"></i> No spam, ever. Unsubscribe anytime. 
-            <a href="/privacy-policy/">Privacy Policy</a>
-          </small>
-        </p>
-      </form>
+
+      <!--
+        Newsletter signup is handled by Brevo (formerly Sendinblue).
+        This replaces the previous Mailchimp form, which posted to
+        .../subscribe/post?u=YOUR_USER_ID&id=YOUR_LIST_ID - the placeholders were
+        never replaced, so no submission from any post ever reached a list.
+        The iframe is lazy loaded so it does not block LCP on article pages.
+      -->
+      <div class="after-content-cta__newsletter-embed" style="margin-top:1.25rem;">
+        <iframe width="540" height="305"
+                src="https://f2405196.sibforms.com/v2/serve/MUIFAC5xyo5fvu3Y9ImGeBD1UFa9xJrQfCmDe1JZ5139ztLHmc8xaIy25-6TxO_N0efFBRFM2XDtKWCv5ViTipOoqZZ_tI58WKoduyNnsQZPcGHm3DftRm6wzShOioBbEvDrTZEw1SZqjLJQ2VYifqNoQrqCVL9Gy-7tHOugE-5j9ouDxmRigwiQUfcTx3ryLTW_mCdcnBhIUcwy"
+                title="Subscribe to the PowerPlatformTip newsletter"
+                loading="lazy"
+                frameborder="0"
+                scrolling="auto"
+                allowfullscreen
+                style="display:block;margin-left:auto;margin-right:auto;max-width:100%;border:0;"></iframe>
+      </div>
+
+      <p class="after-content-cta__privacy">
+        <small>
+          <i class="fas fa-lock"></i> No spam, ever. Unsubscribe anytime. 
+          <a href="/privacy-policy/">Privacy Policy</a>
+        </small>
+      </p>
     </div>
   </div>
   

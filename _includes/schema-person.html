@@ -5,6 +5,11 @@
   worksFor points to a single employer node: https://kmupower.com/#organization
   (KMUpower is the sole proprietorship of Marcel Lehmann; thepoweraddicts.ch
   now redirects to kmupower.com, so it must not appear as a separate entity).
+
+  Origin vs residence: Marcel Lehmann is a German national, born in Dresden,
+  and has been living and working in Switzerland since 2011. Therefore
+  nationality = DE, while homeLocation and workLocation = Fehraltorf, CH.
+  Keep these three properties consistent with _includes/schema.html.
 -->
 <script type="application/ld+json">
 {
@@ -15,7 +20,7 @@
   "url": "{{ site.url }}{{ site.baseurl }}/about/",
   "image": "{{ site.url }}{{ site.baseurl }}/assets/images/bio-photo.jfif",
   "jobTitle": "Microsoft Business Applications MVP & Power Platform Consultant",
-  "description": "Microsoft Business Applications MVP from Switzerland. Expert in Power Apps, Power Automate, and Copilot Studio. Coaching, consulting & training for Power Platform solutions.",
+  "description": "Microsoft Business Applications MVP based in Switzerland. Expert in Power Apps, Power Automate, and Copilot Studio. Coaching, consulting & training for Power Platform solutions.",
   "knowsAbout": [
     "Microsoft Power Platform",
     "Power Apps",
@@ -73,6 +78,30 @@
       "credentialCategory": "PL-500"
     }
   ],
+  "nationality": {
+    "@type": "Country",
+    "name": "Germany",
+    "alternateName": "DE"
+  },
+  "birthPlace": {
+    "@type": "Place",
+    "name": "Dresden",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dresden",
+      "addressCountry": "DE"
+    }
+  },
+  "homeLocation": {
+    "@type": "Place",
+    "name": "Fehraltorf, Switzerland",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Fehraltorf",
+      "postalCode": "8320",
+      "addressCountry": "CH"
+    }
+  },
   "workLocation": {
     "@type": "Place",
     "address": {
