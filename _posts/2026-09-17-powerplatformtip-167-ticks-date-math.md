@@ -1,6 +1,6 @@
 ---
 title: "#PowerPlatformTip 167: 'Date Math Without a dateDiff() - the ticks() Trick'"
-date: 2026-08-27
+date: 2026-10-08
 categories:
   - Article
   - PowerPlatformTip
