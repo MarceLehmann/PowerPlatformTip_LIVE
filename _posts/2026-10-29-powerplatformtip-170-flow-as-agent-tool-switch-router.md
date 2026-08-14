@@ -133,3 +133,7 @@ From your input descriptions. Spell out the expected format (OData vs. JSON) in 
 - [#PowerPlatformTip 104: Efficient JSON Handling](https://www.powerplatformtip.com/article/powerplatformtip/powerplatformtip-104-efficient-json-handling/), Parse JSON schemas for the `create` / `update` branches.
 - [#PowerPlatformTip 95: Optimized SharePoint Queries](https://www.powerplatformtip.com/article/powerplatformtip/powerplatformtip-95-optimized-sharepoint-queries/), building the OData Filter Query used in the `get` branch.
 - [#PowerPlatformTip 118: Copy Actions in Switch/Condition](https://www.powerplatformtip.com/article/powerplatformtip/powerplatformtip-118-copy-actions-in-switch_condition/), working cleanly inside Switch branches.
+
+---
+
+> 📌 **Scheduling note:** I moved this tip forward in the publishing schedule - the rest of this Copilot Studio series (and some of the related tips referenced above) are published later and will follow in the coming weeks.
