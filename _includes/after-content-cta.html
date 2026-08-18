@@ -1,14 +1,6 @@
-<!-- After Content Dual CTA -->
+<!-- After Content CTA (workshop only - newsletter signup lives on /newsletter/, linked from the footer) -->
 <style>
-  /* Compact proportions: the old CSS was sized for a big inline signup form */
-  .after-content-cta{margin:2rem 0;gap:1.25rem}
-  .after-content-cta__primary{padding:1.5rem 1.75rem}
-  .after-content-cta__icon{font-size:2rem;margin-bottom:.75rem}
-  .after-content-cta__title{font-size:1.4rem;margin-bottom:.6rem}
-  .after-content-cta__description{font-size:.95rem;margin-bottom:1rem}
-  .after-content-cta__benefits{gap:.5rem 1rem;margin-bottom:1rem}
-  .after-content-cta__benefit{font-size:.9rem}
-  .after-content-cta__benefit i{font-size:1rem}
+  .after-content-cta{margin:2rem 0;display:flex;flex-direction:column;gap:1.25rem}
   .after-content-cta__secondary{padding:1.25rem 1.5rem}
   .after-content-cta__workshop{gap:1.25rem}
   .after-content-cta__workshop-icon{font-size:2rem}
@@ -17,53 +9,6 @@
   .after-content-cta__workshop-button{padding:.6rem 1.25rem;font-size:.9rem}
 </style>
 <div class="after-content-cta">
-  <div class="after-content-cta__primary">
-    <div class="after-content-cta__icon">
-      <i class="fas fa-paper-plane"></i>
-    </div>
-    <div class="after-content-cta__content">
-      <h3 class="after-content-cta__title">Get More Power Platform Tips</h3>
-      <p class="after-content-cta__description">
-        Join <strong><span class="subscriber-count">4,000+</span> professionals</strong> who receive weekly expert insights, practical solutions, and proven best practices for Power Apps, Power Automate, and Copilot Studio.
-      </p>
-
-      <div class="after-content-cta__benefits">
-        <div class="after-content-cta__benefit">
-          <i class="fas fa-check-circle"></i>
-          <span>Weekly expert tips &amp; tricks</span>
-        </div>
-        <div class="after-content-cta__benefit">
-          <i class="fas fa-check-circle"></i>
-          <span>Real-world solutions</span>
-        </div>
-        <div class="after-content-cta__benefit">
-          <i class="fas fa-check-circle"></i>
-          <span>Time-saving strategies</span>
-        </div>
-        <div class="after-content-cta__benefit">
-          <i class="fas fa-check-circle"></i>
-          <span>MVP-level expertise</span>
-        </div>
-      </div>
-
-      <!-- Signup happens on the dedicated newsletter page (form also in the footer below) -->
-      <p style="text-align:center;margin:1rem 0 0.4rem;">
-        <a href="{{ '/newsletter/' | relative_url }}"
-           class="btn btn--primary btn--large"
-           style="display:inline-block;padding:0.75rem 2rem;font-weight:700;">
-          <i class="fas fa-envelope-open-text"></i>&nbsp; Subscribe to the newsletter
-        </a>
-      </p>
-
-      <p class="after-content-cta__privacy" style="text-align:center;">
-        <small>
-          <i class="fas fa-lock"></i> No spam, ever. Unsubscribe anytime.
-          <a href="/privacy-policy/">Privacy Policy</a>
-        </small>
-      </p>
-    </div>
-  </div>
-
   <div class="after-content-cta__secondary">
     <div class="after-content-cta__workshop">
       <div class="after-content-cta__workshop-icon">
