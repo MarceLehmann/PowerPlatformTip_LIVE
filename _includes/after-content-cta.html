@@ -1,4 +1,21 @@
 <!-- After Content Dual CTA -->
+<style>
+  /* Compact proportions: the old CSS was sized for a big inline signup form */
+  .after-content-cta{margin:2rem 0;gap:1.25rem}
+  .after-content-cta__primary{padding:1.5rem 1.75rem}
+  .after-content-cta__icon{font-size:2rem;margin-bottom:.75rem}
+  .after-content-cta__title{font-size:1.4rem;margin-bottom:.6rem}
+  .after-content-cta__description{font-size:.95rem;margin-bottom:1rem}
+  .after-content-cta__benefits{gap:.5rem 1rem;margin-bottom:1rem}
+  .after-content-cta__benefit{font-size:.9rem}
+  .after-content-cta__benefit i{font-size:1rem}
+  .after-content-cta__secondary{padding:1.25rem 1.5rem}
+  .after-content-cta__workshop{gap:1.25rem}
+  .after-content-cta__workshop-icon{font-size:2rem}
+  .after-content-cta__workshop-title{font-size:1.15rem}
+  .after-content-cta__workshop-description{font-size:.9rem;margin-bottom:.75rem}
+  .after-content-cta__workshop-button{padding:.6rem 1.25rem;font-size:.9rem}
+</style>
 <div class="after-content-cta">
   <div class="after-content-cta__primary">
     <div class="after-content-cta__icon">
@@ -30,7 +47,7 @@
       </div>
 
       <!-- Signup happens on the dedicated newsletter page (form also in the footer below) -->
-      <p style="text-align:center;margin:1.5rem 0 0.5rem;">
+      <p style="text-align:center;margin:1rem 0 0.4rem;">
         <a href="{{ '/newsletter/' | relative_url }}"
            class="btn btn--primary btn--large"
            style="display:inline-block;padding:0.75rem 2rem;font-weight:700;">
