@@ -1,15 +1,14 @@
 {%- comment -%}
-E-E-A-T author box, rendered after the content of every post.
+E-E-A-T author box, rendered inside page__content after the post body.
 Purpose: make authorship, credentials and verifiable profiles visible to readers,
 to Google (helpful content: "who wrote this and why are they qualified")
 and to AI answer engines that look for a trustworthy, citable source.
 The markup mirrors the Person data in _includes/schema.html, so the visible
 content and the structured data always tell the same story.
-Previously this file was empty and contained an orphaned closing div.
 {%- endcomment -%}
 
 {%- if page.layout == 'single' and page.date -%}
-<aside class="pptip-author-box" style="margin:2.5rem 0 1rem;padding:1.25rem;border:1px solid #e5e7eb;border-radius:12px;background:#fafafa;">
+<aside class="pptip-author-box" style="display:block;width:100%;clear:both;margin:2.5rem 0 1rem;padding:1.25rem;border:1px solid #e5e7eb;border-radius:12px;background:#fafafa;">
   <div style="display:flex;gap:1rem;align-items:flex-start;flex-wrap:wrap;">
     <img src="{{ '/assets/images/bio-photo.jfif' | relative_url }}"
          alt="Marcel Lehmann, Microsoft Business Applications MVP"
