@@ -4,7 +4,7 @@ title: "Power Platform Newsletter - Weekly Tips & Tutorials | PowerPlatformTip"
 permalink: /newsletter/
 description: "Subscribe to the weekly PowerPlatformTip Newsletter by MVP Marcel Lehmann. Exclusive tips, tutorials and updates on Power Apps, Power Automate & Copilot Studio directly to your inbox."
 excerpt: "Stay up to date with weekly Power Platform tips, best practices and news directly from Microsoft MVP Marcel Lehmann."
-keywords: "PowerPlatformTips Newsletter, Power Platform, Marcel Lehmann, MVP, ThePowerAddicts, Power Apps Tutorial, Power Automate Tips, Copilot Studio"
+keywords: "PowerPlatformTips Newsletter, Power Platform, Marcel Lehmann, MVP, Power Apps Tutorial, Power Automate Tips, Copilot Studio"
 author_profile: false
 sitemap:
   priority: 0.8
@@ -26,12 +26,12 @@ Don’t miss any #PowerPlatformTips! Subscribe now to receive weekly:
 - Step-by-step tutorials and best practices  
 - News on Power Apps, Power Automate, Dataverse & Copilot Studio  
 
-<div class="newsletter-form">
-  <!-- systeme.io script automatically generates the form here -->
-  <script
-    id="form-script-tag-18726789"
-    src="https://marcellehman.systeme.io/public/remote/page/30106570e4186c65632a05ef223faa36caf71de7.js">
-  </script>
+<div class="newsletter-form" style="max-width: 560px; margin: 1.5rem auto;">
+  <iframe
+    src="https://f2405196.sibforms.com/serve/MUIFAKUg_sdL7qa_ISihRTrt0MaL-uPb9gnJAaPHjGGGqJIWcstC_jjbvid3Npe4v9adeNBuIGWwz_vPw2msuL_LzI5boEFv0KA-iV9PLJvvDtKfA1JWY-G2Qy6Z9tJP4hx7jRM7K4Q4qaSBmJFDIDhIOSrLqCa5Zke3aLODCk7aVKVBlGMKaBoB5nXvaSMD5n2rNrYHj677g9zI"
+    title="Newsletter signup – PowerPlatformTip"
+    style="width: 100%; height: 620px; border: 0; display: block; background: #fff; border-radius: 8px;"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
 ---
@@ -54,5 +54,3 @@ Don’t miss any #PowerPlatformTips! Subscribe now to receive weekly:
     </ul>
   </div>
 </div>
-
-
