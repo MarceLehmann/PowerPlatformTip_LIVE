@@ -32,47 +32,6 @@
       </footer>
     </div>
 
-    <!-- Newsletter Sticky Note - Bottom Left -->
-    <div class="newsletter-sticky-note">
-      <button class="newsletter-sticky-note__close" aria-label="Close">×</button>
-      <div class="newsletter-sticky-note__content">
-        <div class="newsletter-sticky-note__icon">✉️</div>
-        <h4 class="newsletter-sticky-note__title">Newsletter</h4>
-        <p class="newsletter-sticky-note__text">
-          Join <strong>4,500+</strong> professionals
-        </p>
-        <script
-          id="form-script-tag-18726789"
-          src="https://marcellehman.systeme.io/public/remote/page/30106570e4186c65632a05ef223faa36caf71de7.js">
-        </script>
-      </div>
-    </div>
-
-    <script>
-      // Newsletter Sticky Note Close Handler
-      (function() {
-        const stickyNote = document.querySelector('.newsletter-sticky-note');
-        const closeBtn = document.querySelector('.newsletter-sticky-note__close');
-        
-        if (closeBtn && stickyNote) {
-          closeBtn.addEventListener('click', function() {
-            stickyNote.classList.add('hidden');
-            // Remember user closed it for 7 days
-            localStorage.setItem('newsletter-sticky-closed', Date.now());
-          });
-        }
-        
-        // Check if user closed it recently
-        const closedTime = localStorage.getItem('newsletter-sticky-closed');
-        if (closedTime) {
-          const daysSinceClosed = (Date.now() - parseInt(closedTime)) / (1000 * 60 * 60 * 24);
-          if (daysSinceClosed < 7 && stickyNote) {
-            stickyNote.classList.add('hidden');
-          }
-        }
-      })();
-    </script>
-
     {% include cookie-consent.html %}
     {% include scripts.html %}
   </body>
