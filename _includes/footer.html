@@ -1,16 +1,17 @@
 <style>
-  .footer-bottom-row{display:flex;flex-direction:row;flex-wrap:nowrap;align-items:center;gap:1.5rem;max-width:1000px;margin:0 auto}
+  .footer-bottom-row{display:flex !important;flex-direction:row !important;flex-wrap:nowrap !important;align-items:center;gap:1.5rem;max-width:1000px;margin:0 auto}
   .footer-bottom-row .page__footer-follow{flex:0 0 auto;margin:0}
   .footer-bottom-row .page__footer-follow .social-icons{margin:0}
-  .footer-bottom-row .page__footer-follow .social-icons li{display:block;margin:.2rem 0}
-  .footer-bottom-row .page__footer-services{flex:1 1 auto;margin:0}
+  .footer-bottom-row .page__footer-follow .social-icons li{display:block;margin:.2rem 0;white-space:nowrap}
+  .footer-bottom-row .page__footer-services{flex:1 1 auto;margin:0 !important;padding:1.25rem 0 !important}
   .footer-bottom-row .footer-services{margin:0}
+  .footer-bottom-row .footer-services__content{padding:0 1.5rem}
   @media (max-width: 768px){
-    .footer-bottom-row{flex-direction:column;align-items:stretch;gap:1rem}
+    .footer-bottom-row{flex-direction:column !important;align-items:stretch;gap:1rem}
     .footer-bottom-row .page__footer-follow .social-icons li{display:inline-block;margin:0 .5rem 0 0}
   }
 </style>
-<div class="footer-bottom-row">
+<div class="footer-bottom-row" style="display:flex;align-items:center;gap:1.5rem;max-width:1000px;margin:0 auto;">
   <div class="page__footer-follow">
     <ul class="social-icons">
       {% if site.data.ui-text[site.locale].follow_label %}
