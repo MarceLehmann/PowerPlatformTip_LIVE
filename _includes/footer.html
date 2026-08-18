@@ -1,50 +1,64 @@
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
+<style>
+  .footer-bottom-row{display:flex;flex-direction:row;flex-wrap:nowrap;align-items:center;gap:1.5rem;max-width:1000px;margin:0 auto}
+  .footer-bottom-row .page__footer-follow{flex:0 0 auto;margin:0}
+  .footer-bottom-row .page__footer-follow .social-icons{margin:0}
+  .footer-bottom-row .page__footer-follow .social-icons li{display:block;margin:.2rem 0}
+  .footer-bottom-row .page__footer-services{flex:1 1 auto;margin:0}
+  .footer-bottom-row .footer-services{margin:0}
+  @media (max-width: 768px){
+    .footer-bottom-row{flex-direction:column;align-items:stretch;gap:1rem}
+    .footer-bottom-row .page__footer-follow .social-icons li{display:inline-block;margin:0 .5rem 0 0}
+  }
+</style>
+<div class="footer-bottom-row">
+  <div class="page__footer-follow">
+    <ul class="social-icons">
+      {% if site.data.ui-text[site.locale].follow_label %}
+        <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
+      {% endif %}
 
-    {% if site.footer.links %}
-      {% for link in site.footer.links %}
-        {% if link.label and link.url %}
-          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
-        {% endif %}
-      {% endfor %}
-    {% endif %}
+      {% if site.footer.links %}
+        {% for link in site.footer.links %}
+          {% if link.label and link.url %}
+            <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
 
-    <li>
-      <a href="https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=marcelehmann" rel="nofollow noopener noreferrer" target="_blank">
-        <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> Follow on LinkedIn
-      </a>
-    </li>
-
-    {% unless site.atom_feed.hide %}
-      <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-    {% endunless %}
-  </ul>
-</div>
-
-<div class="page__footer-services">
-  <div class="footer-services">
-    <div class="footer-services__content">
-      <div class="footer-services__icon">
-        <i class="fas fa-chalkboard-teacher"></i>
-      </div>
-      <div class="footer-services__text">
-        <h4 class="footer-services__title">Need Expert Power Platform Help?</h4>
-        <p class="footer-services__description">
-          Get professional workshops, consulting, and training for your Power Platform projects. 
-          Benefit from MVP-level expertise and proven solutions.
-        </p>
-      </div>
-      <div class="footer-services__cta">
-        <a href="https://kmupower.com" 
-           class="footer-services__button"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Explore Services">
-          <i class="fas fa-arrow-right"></i>
+      <li>
+        <a href="https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=marcelehmann" rel="nofollow noopener noreferrer" target="_blank">
+          <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> Follow on LinkedIn
         </a>
+      </li>
+
+      {% unless site.atom_feed.hide %}
+        <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
+      {% endunless %}
+    </ul>
+  </div>
+
+  <div class="page__footer-services">
+    <div class="footer-services">
+      <div class="footer-services__content">
+        <div class="footer-services__icon">
+          <i class="fas fa-chalkboard-teacher"></i>
+        </div>
+        <div class="footer-services__text">
+          <h4 class="footer-services__title">Need Expert Power Platform Help?</h4>
+          <p class="footer-services__description">
+            Get professional workshops, consulting, and training for your Power Platform projects. 
+            Benefit from MVP-level expertise and proven solutions.
+          </p>
+        </div>
+        <div class="footer-services__cta">
+          <a href="https://kmupower.com" 
+             class="footer-services__button"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Explore Services">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
     </div>
   </div>
