@@ -9,7 +9,7 @@
       <p class="after-content-cta__description">
         Join <strong><span class="subscriber-count">4,000+</span> professionals</strong> who receive weekly expert insights, practical solutions, and proven best practices for Power Apps, Power Automate, and Copilot Studio.
       </p>
-      
+
       <div class="after-content-cta__benefits">
         <div class="after-content-cta__benefit">
           <i class="fas fa-check-circle"></i>
@@ -29,29 +29,24 @@
         </div>
       </div>
 
-      <!--
-        Newsletter signup is handled by Brevo. The iframe is lazy loaded
-        so it does not block LCP on article pages.
-      -->
-      <div class="after-content-cta__newsletter-embed" style="margin-top:1.25rem;">
-        <iframe
-                src="https://f2405196.sibforms.com/serve/MUIFAKUg_sdL7qa_ISihRTrt0MaL-uPb9gnJAaPHjGGGqJIWcstC_jjbvid3Npe4v9adeNBuIGWwz_vPw2msuL_LzI5boEFv0KA-iV9PLJvvDtKfA1JWY-G2Qy6Z9tJP4hx7jRM7K4Q4qaSBmJFDIDhIOSrLqCa5Zke3aLODCk7aVKVBlGMKaBoB5nXvaSMD5n2rNrYHj677g9zI"
-                title="Subscribe to the PowerPlatformTip newsletter"
-                loading="lazy"
-                frameborder="0"
-                scrolling="auto"
-                style="display:block;margin-left:auto;margin-right:auto;width:100%;max-width:540px;height:620px;border:0;background:#fff;border-radius:8px;"></iframe>
-      </div>
+      <!-- Signup happens on the dedicated newsletter page (form also in the footer below) -->
+      <p style="text-align:center;margin:1.5rem 0 0.5rem;">
+        <a href="{{ '/newsletter/' | relative_url }}"
+           class="btn btn--primary btn--large"
+           style="display:inline-block;padding:0.75rem 2rem;font-weight:700;">
+          <i class="fas fa-envelope-open-text"></i>&nbsp; Subscribe to the newsletter
+        </a>
+      </p>
 
-      <p class="after-content-cta__privacy">
+      <p class="after-content-cta__privacy" style="text-align:center;">
         <small>
-          <i class="fas fa-lock"></i> No spam, ever. Unsubscribe anytime. 
+          <i class="fas fa-lock"></i> No spam, ever. Unsubscribe anytime.
           <a href="/privacy-policy/">Privacy Policy</a>
         </small>
       </p>
     </div>
   </div>
-  
+
   <div class="after-content-cta__secondary">
     <div class="after-content-cta__workshop">
       <div class="after-content-cta__workshop-icon">
@@ -62,7 +57,7 @@
         <p class="after-content-cta__workshop-description">
           Get expert guidance through personalized workshops, consulting, and training tailored to your specific needs.
         </p>
-        <a href="https://kmupower.com/kontakt" 
+        <a href="https://kmupower.com/kontakt"
            class="after-content-cta__workshop-button"
            target="_blank"
            rel="noopener noreferrer">
