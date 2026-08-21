@@ -2,7 +2,7 @@
 title: "#PowerPlatformTip 127: 'Special User-Informations in PowerApps Studio'"
 seo_title: "#PowerPlatformTip 127: Special User-Informations in PowerApps Studio"
 date: 2024-10-17
-last_modified_at: 2026-07-09
+last_modified_at: 2026-08-21
 categories:
   - Article
   - PowerPlatformTip
@@ -21,7 +21,11 @@ toc: true
 toc_sticky: true
 ---
 
-> **TL;DR:** Auto-switch to a test email in Power Apps Studio and the real `User().Email` in production via `StartsWith(Host.Version, "PowerApps-Studio")`.
+> **TL;DR:** Auto-switch to a test email in Power Apps Studio and the real `User().Email` in production via `IsBlank(Host.Version)`.
+
+<!-- UPDATE 2026-08-21: Replaced StartsWith(Host.Version, "PowerApps-Studio") with IsBlank(Host.Version). Per Microsoft Learn (Host object reference), Host.Version is always an empty string in Power Apps Studio and only returns a version identifier in the web/mobile player, so the old StartsWith check no longer reliably detects Studio mode. FAQ 1, TL;DR and How It's Done updated accordingly; last_modified_at bumped. -->
+
+> **🔄 Update (2026-08-21):** The Studio check now uses `IsBlank(Host.Version)` instead of `StartsWith(Host.Version, "PowerApps-Studio")`. According to the [official Microsoft documentation](https://learn.microsoft.com/power-platform/power-fx/reference/object-host), `Host.Version` is **always an empty string in Power Apps Studio** and only returns a value in the web or mobile player. Testing for blank is therefore the reliable way to detect Studio mode.
 
 ## 💡 Challenge
 While developing apps in Power Apps Studio, you often want to use test values, like a test email address, without risking that they end up in production.
@@ -34,7 +38,7 @@ Check whether the app is running in Studio mode. If it is, use a test email for 
 Use this formula to detect Studio mode and switch email addresses accordingly:
 
 ```powerfx
-fxIsStudioMode = StartsWith(Host.Version, "PowerApps-Studio");
+fxIsStudioMode = IsBlank(Host.Version);
 fxUserEmail = If(
     fxIsStudioMode,
     "testaccount@company.com",
@@ -68,7 +72,7 @@ Special thanks to [Matthew Devaney](https://www.linkedin.com/in/matthew-devaney)
 
 ## 🛠️ FAQ
 **1. How do I determine if my app is in Studio Mode?**
-Use the `StartsWith` function on `Host.Version` to check for "PowerApps-Studio".
+Check whether `Host.Version` is empty with `IsBlank(Host.Version)`. It returns `true` in Power Apps Studio and `false` in the web or mobile player. (Avoid `StartsWith(Host.Version, "PowerApps-Studio")`, because `Host.Version` is blank in Studio.)
 
 **2. Can I apply this pattern to other test values?**
 Yes, use the same logic to switch between development and production values for any parameter.
