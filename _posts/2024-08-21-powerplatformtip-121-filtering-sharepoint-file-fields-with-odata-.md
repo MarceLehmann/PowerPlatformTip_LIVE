@@ -2,7 +2,7 @@
 title: "#PowerPlatformTip 121: 'Filtering SharePoint File Fields with OData'"
 seo_title: "Filter SharePoint Files by Name in Power Automate"
 date: 2024-08-21
-last_modified_at: 2026-07-10
+last_modified_at: 2026-08-22
 categories:
   - Article
   - PowerPlatformTip
@@ -22,6 +22,8 @@ header:
 toc: true
 toc_sticky: true
 faq:
+  - question: "How do I exclude files by extension, e.g. ZIP files, with an OData filter?"
+    answer: "Use substringof with eq false in the Filter Query: substringof('.zip', FileLeafRef) eq false returns every file whose name does not contain .zip. Combine with eq true to include only certain extensions."
   - question: "How do I apply these OData filters in Power Automate?"
     answer: "In the 'Get files (properties only)' action, enter your OData filter expression into the Filter Query field to limit results based on FileLeafRef, FileRef, or FileDirRef."
   - question: "Can I combine multiple OData filter conditions?"
@@ -56,6 +58,28 @@ Add one of these fields to the **Filter Query** of your "Get files (properties o
 
 This pairs well with efficient query design, see #PowerPlatformTip 95, 'Optimized SharePoint Queries'.
 
+## 📦 Exclude or Include Files by Extension with substringof
+
+A very common requirement: return all files **except** a certain type. Use `substringof()` on `FileLeafRef` with `eq false`:
+
+```
+substringof('.zip', FileLeafRef) eq false
+```
+
+This returns every file whose name does **not** contain `.zip`. The reverse works too – only Word documents:
+
+```
+substringof('.docx', FileLeafRef) eq true
+```
+
+And both patterns can be combined with other conditions:
+
+```
+substringof('.zip', FileLeafRef) eq false and startswith(FileDirRef, '/sites/demo/Shared Documents')
+```
+
+**Note:** `substringof('.zip', FileLeafRef)` matches anywhere in the file name – a file called `archive.zip.backup.docx` would also match. For a strict extension check, sort by name or verify the extension afterwards with an expression like `endsWith()` in a condition.
+
 ## 🎉 Result
 Your workflows become more robust and easier to maintain. Server-side filtering cuts the time spent on manual adjustments and minimizes the potential for errors.
 
@@ -75,23 +99,26 @@ Your workflows become more robust and easier to maintain. Server-side filtering 
 ---
 
 ## 🛠️ FAQ
-**1. How do I apply these OData filters in Power Automate?**
+**1. How do I exclude ZIP files (or any extension) with an OData filter?**
+Use `substringof('.zip', FileLeafRef) eq false` in the **Filter Query** – it returns every file whose name does not contain `.zip`. With `eq true` you include only matching files instead.
+
+**2. How do I apply these OData filters in Power Automate?**
 In the "Get files (properties only)" action, enter your OData filter expression into the **Filter Query** field to limit results based on FileLeafRef, FileRef, or FileDirRef.
 
-**2. Can I combine multiple OData filter conditions?**
+**3. Can I combine multiple OData filter conditions?**
 Yes. Use logical operators like `and` or `or` in your filter query, for example:
 `FileLeafRef eq 'document.pdf' and startswith(FileDirRef, '/sites/demo/Shared Documents')`.
 
-**3. Are these fields supported in SharePoint on-premises?**
+**4. Are these fields supported in SharePoint on-premises?**
 OData filtering with FileLeafRef, FileRef, and FileDirRef works in SharePoint Online and on-premises (2013+). Ensure your environment and connector version support OData queries.
 
-**4. What does FileLeafRef mean?**
+**5. What does FileLeafRef mean?**
 It's the file name itself, for example, 'Invoice.pdf'.
 
-**5. What does FileRef mean?**
+**6. What does FileRef mean?**
 It's the full path of a file, including folders, for example, '/sites/demo/Shared Documents/Invoice.pdf'.
 
-**6. What does FileDirRef mean?**
+**7. What does FileDirRef mean?**
 It refers to a folder path only, for example, '/sites/demo/Shared Documents/'.
 
 ## 🔗 Related Tips

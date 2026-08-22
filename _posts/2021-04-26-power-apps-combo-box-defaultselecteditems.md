@@ -1,12 +1,15 @@
 ---
-title: "Power Apps Combo Box DefaultSelectedItems from Shane Young"
+title: "Power Apps ComboBox DefaultSelectedItems: Set One or Multiple Default Values"
+seo_title: "Power Apps ComboBox DefaultSelectedItems – Set Default Values"
 date: 2021-04-26
 permalink: "/article/powerplatform/2021/04/26/power-apps-combo-box-defaultselecteditems/"
-updated: 2025-06-26
+updated: 2026-08-22
+last_modified_at: 2026-08-22
 categories:
   - Article
   - PowerPlatform
-excerpt: "Learn how to properly set DefaultSelectedItems in PowerApps ComboBox controls using tables, lookups, and manually-created records. A comprehensive guide by Shane Young."
+excerpt: "Set DefaultSelectedItems in a Power Apps ComboBox with copy-paste formulas: pre-select one or multiple items for text, Choice, Lookup and Person columns – plus fixes for the most common errors."
+description: "How to set DefaultSelectedItems in a Power Apps ComboBox: working formulas to pre-select one or multiple default values for text, SharePoint Choice, Lookup and Person columns."
 header:
   overlay_color: "#2dd4bf"
   overlay_filter: "0.5"
@@ -23,7 +26,18 @@ tags:
   - Tables
   - Lookup
   - YouTube
+faq:
+  - question: "Why does DefaultSelectedItems not work in my Power Apps ComboBox?"
+    answer: "Almost always a type mismatch: DefaultSelectedItems expects a table of records with the same structure as the ComboBox Items property. Passing a plain text value like \"Option A\" fails – wrap it as a record, for example [{Value: \"Option A\"}]."
+  - question: "How do I set multiple default values in a Power Apps ComboBox?"
+    answer: "Return a table with several records, for example Filter(Choices(YourList.YourColumn), Value in [\"Option A\", \"Option B\"]) or a manual table like Table({Value: \"Option A\"}, {Value: \"Option B\"})."
+  - question: "How do I set a default value for a SharePoint Choice column in a ComboBox?"
+    answer: "Use [LookUp(Choices(YourList.YourColumn), Value = ThisItem.YourColumn.Value)] for a single default, or ThisItem.YourColumn directly for multi-select Choice columns when editing an existing item."
+  - question: "How do I pre-select the current user in a Person column ComboBox?"
+    answer: "Provide a record matching the person field schema, for example: [{Claims: \"i:0#.f|membership|\" & Lower(User().Email), DisplayName: User().FullName, Email: User().Email}]."
 ---
+
+> **Quick answer:** `DefaultSelectedItems` expects a **table of records with the same structure as the ComboBox `Items` property**. Pre-select one item with `[LookUp(Choices(YourList.YourColumn), Value = "Option A")]`, multiple items with `Filter(Choices(YourList.YourColumn), Value in ["Option A", "Option B"])`, and for a simple text ComboBox `[{Value: "Option A"}]` is enough. A plain string like `"Option A"` will **not** work.
 
 A great summary of how to deal with DefaultSelectedItems in a ComboBox and how to set them using a table/lookup or a manually-created record.
 
@@ -267,6 +281,41 @@ This DefaultSelectedItems tutorial showcases Shane's ability to break down compl
 - **Follow delegation best practices** for scalable solutions
 
 This comprehensive guide ensures developers can confidently implement DefaultSelectedItems in any ComboBox scenario, from simple static defaults to complex dynamic multi-table lookups.
+
+## 🛠️ FAQ
+
+**1. Why does DefaultSelectedItems not work in my ComboBox?**
+
+Almost always a type mismatch: `DefaultSelectedItems` expects a **table of records** with the same structure as the ComboBox `Items` property. Passing a plain text value like `"Option A"` fails – wrap it as a record: `[{Value: "Option A"}]`.
+
+**2. How do I set multiple default values in a Power Apps ComboBox?**
+
+Return a table with several records:
+
+```powerapps
+Filter(Choices(YourList.YourColumn), Value in ["Option A", "Option B"])
+// or a manual table
+Table({Value: "Option A"}, {Value: "Option B"})
+```
+
+**3. How do I set a default value for a SharePoint Choice column?**
+
+```powerapps
+// Single-select Choice column
+[LookUp(Choices(YourList.YourColumn), Value = ThisItem.YourColumn.Value)]
+// Multi-select Choice column (edit form)
+ThisItem.YourColumn
+```
+
+**4. How do I pre-select the current user in a Person column ComboBox?**
+
+```powerapps
+[{
+    Claims: "i:0#.f|membership|" & Lower(User().Email),
+    DisplayName: User().FullName,
+    Email: User().Email
+}]
+```
 
 ---
 
