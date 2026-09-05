@@ -1,6 +1,6 @@
 ---
-title: "#PowerPlatformTip 175: '25 Everyday xpath() Recipes That Kill Apply to each in Power Automate'"
-date: 2026-09-05
+title: "#PowerPlatformTip 178: '25 Everyday xpath() Recipes That Kill Apply to each in Power Automate'"
+date: 2026-11-12
 categories:
   - Article
   - PowerPlatformTip
